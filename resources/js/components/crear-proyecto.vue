@@ -75,8 +75,6 @@
       </div>
     </div>
     <!-- /.content -->
-    </div>
-<!-- /.content-wrapper -->
 <div class="modal fade" id="agregar">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -123,22 +121,21 @@
                   </div>
                 <!-- /.card-body -->
 
-
-            </div>
-            <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">
-                Close
-              </button>
-              <button type="submit" class="btn btn-primary">
-              Save changes
-              </button>
-              </form>
-            </div>
+                  <button type="submit" class="btn btn-primary">
+                    Guardar
+                  </button>
+              </div>
+            </form>
           </div>
           <!-- /.modal-content -->
         </div>
         <!-- /.modal-dialog -->
       </div>
+      <!-- Fin modal -->
+    </div>
+  </div>
+<!-- /.content-wrapper -->
+
 </template>
 
 <script>
