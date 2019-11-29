@@ -46,6 +46,35 @@
               </li>
             </ul>
           </li>
+          <li class="nav-item has-treeview menu-open">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fab fa-dev"></i>
+              <p>
+                Proyectos
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li @Click="menu=5"class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Crear proyectos</p>
+                </a>
+              </li>
+              <li @Click="menu=6"class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Mis proyectos</p>
+                </a>
+              </li>
+              <li @Click="menu=7"class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Vista Proyectos</p>
+                </a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
 <!-- /.sidebar-menu -->

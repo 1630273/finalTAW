@@ -47,6 +47,7 @@
                       <th>Compañia/Cliente</th>
                       <th>Fecha Inicio</th>
                       <th>Fecha Final</th>
+                      <th>Estatus</th>
                       <th>Accion</th>
                     </tr>
                   </thead>
@@ -56,9 +57,21 @@
                       <td>Daniel Sunu</td>
                       <td>27/11/2019</td>
                       <td>31/12/2019</td>
+                      <td><span class="badge badge-success">Activo</span></td>
+                      <td>
+                        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#editar">
+                          Editar
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Proyecto 2</td>
+                      <td>Jose Jose</td>
+                      <td>30/11/2019</td>
+                      <td>31/12/2019</td>
+                      <td><span class="badge badge-danger">Inactivo</span></td>
                       <td>
                         <a href="#" class="btn btn-primary btn-block"><b>Editar</b></a>
-                        <a href="#" class="btn btn-primary btn-block"><b>Borrar</b></a>
                       </td>
                     </tr>
                   </tbody>
@@ -75,8 +88,8 @@
       </div>
     </div>
     <!-- /.content -->
-    </div>
-<!-- /.content-wrapper -->
+
+
 <div class="modal fade" id="agregar">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -123,22 +136,82 @@
                   </div>
                 <!-- /.card-body -->
 
-
-            </div>
-            <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">
-                Close
-              </button>
-              <button type="submit" class="btn btn-primary">
-              Save changes
-              </button>
-              </form>
-            </div>
+                  <button type="submit" class="btn btn-primary">
+                    Guardar
+                  </button>
+              </div>
+            </form>
           </div>
           <!-- /.modal-content -->
         </div>
         <!-- /.modal-dialog -->
       </div>
+      <!-- Fin modal -->
+    </div>
+
+
+<div class="modal fade" id="editar">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Editar Proyecto</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+
+              <form method="post">
+                <div class="card-body">
+
+                  <div class="form-group">
+                    <label for="tituloEditar">Titulo</label>
+                    <input type="text" class="form-control" id="tituloEditar" value="Proyecto 1" placeholder="Titulo del proyecto">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="compClientEditar">Compañia/Cliente</label>
+                    <input type="text" class="form-control" id="compClientEditar" value="Daniel Sunu" placeholder="Compañia o cliente">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="progresoEditar">Progreso</label>
+                    <input type="text" class="form-control" id="progresoEditar" value="0%">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="fechaIniEditar">Fecha Inicio</label>
+                    <input type="date" class="form-control" id="fechaIniEditar" value="2019/11/27" placeholder="Fecha inicio">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="fechaFinEditar">Fecha Final</label>
+                    <input type="date" class="form-control" id="fechaFinEditar" value="31/12/2019" placeholder="Fecha inicio">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="descEditar">Descripción</label>
+                    <input type="text" class="form-control" id="descEditar" placeholder="Descripción">
+                  </div>
+                <!-- /.card-body -->
+
+                  <button type="submit" class="btn btn-primary">
+                    Guardar
+                  </button>
+              </div>
+            </form>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- Fin modal -->
+    </div>
+
+  </div>
+<!-- /.content-wrapper -->
+
 </template>
 
 <script>
