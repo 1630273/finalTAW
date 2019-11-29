@@ -208,7 +208,6 @@
       </div>
       <!-- Fin modal -->
     </div>
-
   </div>
 <!-- /.content-wrapper -->
 
