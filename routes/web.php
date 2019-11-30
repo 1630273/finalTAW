@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/main', function () {
     return view('contenido/contenido');
 });
+
+
+Route::get('/', 'Auth\LoginController@showLoginForm');
+
+Route::get('/home', 'HomeController@index')->name('home');

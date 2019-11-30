@@ -12,11 +12,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!--meta http-equiv="Content-Type" content="text/html"-->
   <title>LALO 3 | Starter</title>
   <link rel="stylesheet" href="css/plantilla.css">
-  <!-- Font Awesome Icons -->
-  <!--link rel="stylesheet" href="css/all.min.css"-->
-  <!-- Theme style -->
-  <!--link rel="stylesheet" href="css/adminlte.min.css"-->
-  <!-- Google Font: Source Sans Pro -->
+ 
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini">
