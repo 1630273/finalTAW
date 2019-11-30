@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProyectosTable extends Migration
+class CreateProblemasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,18 +13,17 @@ class CreateProyectosTable extends Migration
      */
     public function up()
     {
-        Schema::create('proyectos', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('problemas', function (Blueprint $table) {
+            $table->increments('id');
             $table->unsignedBigInteger('id_usuario');
-            $table->string('titulo');
-            $table->string('cliente');
-            $table->double('presupuesto');
-            $table->date('f_inicio');
-            $table->date('f_final');
-            $table->boolean('condicion')->default(1);
+            $table->unsignedBigInteger('id_proyecto');
+            $table->string('descripcion');
+            $table->integer('status');
+            $table->date('fecha');
             $table->foreign('id_usuario')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('id_proyecto')->references('id')->on('proyectos')->onDelete('cascade');            
             $table->timestamps();
-         });
+        });
     }
 
     /**
@@ -34,6 +33,6 @@ class CreateProyectosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('proyectos');
+        Schema::dropIfExists('problemas');
     }
 }

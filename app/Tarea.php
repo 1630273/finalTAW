@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Tarea extends Model
 {
     protected $fillable = [
-        'id_tarea', 'id_actividad', 'descripcion', 'f_inicio', 'f_final', 'tipo_factura', 
+        'id', 'id_actividad', 'descripcion', 'f_inicio', 'f_final', 'tipo_factura', 
         'precio', 'status', 'condicion'
     ];
 }

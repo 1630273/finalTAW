@@ -18,6 +18,9 @@ window.Vue = require('vue');
 Vue.component('dashboard', require('./components/dashboard.vue').default);
 Vue.component('metodos-retiro', require('./components/metodos-retiro.vue').default);
 Vue.component('crear-proyecto', require('./components/crear-proyecto.vue').default);
+Vue.component('mis-proyectos', require('./components/mis-proyectos.vue').default);
+Vue.component('proyectos', require('./components/proyectos.vue').default);
+Vue.component('usuarios', require('./components/usuarios.vue').default);
 
 const app = new Vue({
     el: '#app',
