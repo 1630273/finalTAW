@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Gasto extends Model
+class Problema extends Model
 {
     protected $fillable = [
-        'id', 'descripcion', 'fecha', 'monto'
+        'id', 'descripcion',  'status', 'fecha'
     ];
 }

@@ -15,9 +15,13 @@ class CreateGastosTable extends Migration
     {
         Schema::create('gastos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('tipo_gasto');
+            $table->unsignedBigInteger('id_proyecto');
+            $table->unsignedBigInteger('id_usuario');
+            $table->string('descripcion');            
             $table->date('fecha');
-            $table->date('f_final');
+            $table->double('monto');
+            $table->foreign('id_proyecto')->references('id')->on('proyectos')->onDelete('cascade');
+            $table->foreign('id_usuario')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

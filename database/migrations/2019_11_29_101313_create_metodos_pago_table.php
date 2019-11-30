@@ -16,7 +16,7 @@ class CreateMetodosPagoTable extends Migration
         Schema::create('metodos_pago', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre');
-            $table->blob('imagen');
+            // $table->string('imagen');
             $table->double('min_cant');
             $table->double('max_cant');
             $table->double('cambio');

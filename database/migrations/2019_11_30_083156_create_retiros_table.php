@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTicketsTable extends Migration
+class CreateRetirosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,14 @@ class CreateTicketsTable extends Migration
      */
     public function up()
     {
-        Schema::create('tickets', function (Blueprint $table) {
+        Schema::create('retiros', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedBigInteger('id_usuario');
-            $table->string('asunto');
-            $table->integer('status');
-            $table->date('fecha');
-            $table->foreign('id_usuario')->references('id')->on('users')->onDelete('cascade');           
+            $table->unsignedBigInteger('id_metodoPago');
+            $table->double('monto');
+            $table->boolean('condicion');
+            $table->foreign('id_usuario')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('id_metodoPago')->references('id')->on('metodos_pago')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -31,6 +32,6 @@ class CreateTicketsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tickets');
+        Schema::dropIfExists('retiros');
     }
 }
