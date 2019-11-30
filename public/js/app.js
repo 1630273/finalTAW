@@ -1911,8 +1911,236 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    console.log('Component mounted.');
   }
+});
+
 /***/ }),
 
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/dashboard.vue?vue&type=script&lang=js&":
@@ -2016,6 +2244,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2375,6 +2617,233 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/usuarios.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/usuarios.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 //
 //
 //
@@ -37897,423 +38366,867 @@ var staticRenderFns = [
       _c("div", { staticClass: "content" }, [
         _c("div", { staticClass: "container-fluid" }, [
           _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-12" }, [
+            _c("div", { staticClass: "col-md-12" }, [
               _c("div", { staticClass: "card" }, [
-                _c("div", { staticClass: "card-header" }, [
-                  _c("h3", { staticClass: "card-title" }, [
-                    _vm._v("Crear Proyecto")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card-tools" }, [
+                _c("div", { staticClass: "card-header p-2" }, [
+                  _c("ul", { staticClass: "nav nav-pills" }, [
+                    _c("li", { staticClass: "nav-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link active",
+                          attrs: { href: "#activos", "data-toggle": "tab" }
+                        },
+                        [_vm._v("Activos")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "nav-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link",
+                          attrs: { href: "#inactivos", "data-toggle": "tab" }
+                        },
+                        [_vm._v("Inactivos")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "nav-item" }, [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link",
+                          attrs: { href: "#eliminados", "data-toggle": "tab" }
+                        },
+                        [_vm._v("Eliminados")]
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-body" }, [
+                  _c("div", { staticClass: "tab-content" }, [
                     _c(
                       "div",
                       {
-                        staticClass: "input-group input-group-sm",
-                        staticStyle: { width: "400px" }
+                        staticClass: "active tab-pane",
+                        attrs: { id: "activos" }
                       },
                       [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-default",
-                            attrs: {
-                              type: "button",
-                              "data-toggle": "modal",
-                              "data-target": "#agregar"
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\r\n                      Agregar Proyecto\r\n                    "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("input", {
-                          staticClass: "form-control float-right",
-                          attrs: {
-                            type: "text",
-                            name: "table_search",
-                            placeholder: "Buscar proyecto"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "input-group-append" }, [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-default",
-                              attrs: { type: "submit" }
-                            },
-                            [_c("i", { staticClass: "fas fa-search" })]
-                          )
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-12" }, [
+                            _c("div", { staticClass: "card" }, [
+                              _c("div", { staticClass: "card-header" }, [
+                                _c("div", { staticClass: "card-tools" }, [
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass: "input-group input-group-sm",
+                                      staticStyle: { width: "400px" }
+                                    },
+                                    [
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass: "btn btn-default",
+                                          attrs: {
+                                            type: "button",
+                                            "data-toggle": "modal",
+                                            "data-target": "#agregar"
+                                          }
+                                        },
+                                        [
+                                          _vm._v(
+                                            "\r\n                      Agregar Proyecto\r\n                    "
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("input", {
+                                        staticClass: "form-control float-right",
+                                        attrs: {
+                                          type: "text",
+                                          name: "table_search",
+                                          placeholder: "Buscar proyecto"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        { staticClass: "input-group-append" },
+                                        [
+                                          _c(
+                                            "button",
+                                            {
+                                              staticClass: "btn btn-default",
+                                              attrs: { type: "submit" }
+                                            },
+                                            [
+                                              _c("i", {
+                                                staticClass: "fas fa-search"
+                                              })
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "card-body table-responsive p-0",
+                                  staticStyle: { height: "200px" }
+                                },
+                                [
+                                  _c(
+                                    "table",
+                                    { staticClass: "table table-head-fixed" },
+                                    [
+                                      _c("thead", [
+                                        _c("tr", [
+                                          _c("th", [_vm._v("Titulo")]),
+                                          _vm._v(" "),
+                                          _c("th", [
+                                            _vm._v("Compañia/Cliente")
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("th", [_vm._v("Fecha Inicio")]),
+                                          _vm._v(" "),
+                                          _c("th", [_vm._v("Fecha Final")]),
+                                          _vm._v(" "),
+                                          _c("th", [_vm._v("Estatus")]),
+                                          _vm._v(" "),
+                                          _c("th", [_vm._v("Accion")])
+                                        ])
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("tbody", [
+                                        _c("tr", [
+                                          _c("td", [_vm._v("Proyecto 1")]),
+                                          _vm._v(" "),
+                                          _c("td", [_vm._v("Daniel Sunu")]),
+                                          _vm._v(" "),
+                                          _c("td", [_vm._v("27/11/2019")]),
+                                          _vm._v(" "),
+                                          _c("td", [_vm._v("31/12/2019")]),
+                                          _vm._v(" "),
+                                          _c("td", [
+                                            _c(
+                                              "span",
+                                              {
+                                                staticClass:
+                                                  "badge badge-success"
+                                              },
+                                              [_vm._v("Activo")]
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("td", [
+                                            _c(
+                                              "button",
+                                              {
+                                                staticClass: "btn btn-warning",
+                                                attrs: {
+                                                  type: "button",
+                                                  "data-toggle": "modal",
+                                                  "data-target": "#editar"
+                                                }
+                                              },
+                                              [
+                                                _c("i", {
+                                                  staticClass:
+                                                    "fas fa-pencil-alt"
+                                                })
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "button",
+                                              {
+                                                staticClass: "btn btn-primary",
+                                                attrs: { type: "button" }
+                                              },
+                                              [
+                                                _c("i", {
+                                                  staticClass: "fas fa-eye"
+                                                })
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "button",
+                                              {
+                                                staticClass: "btn btn-danger",
+                                                attrs: { type: "button" }
+                                              },
+                                              [
+                                                _c("i", {
+                                                  staticClass:
+                                                    "fas fa-trash-alt"
+                                                })
+                                              ]
+                                            )
+                                          ])
+                                        ])
+                                      ])
+                                    ]
+                                  )
+                                ]
+                              )
+                            ])
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "modal fade", attrs: { id: "agregar" } },
+                      [
+                        _c("div", { staticClass: "modal-dialog" }, [
+                          _c("div", { staticClass: "modal-content" }, [
+                            _c("div", { staticClass: "modal-header" }, [
+                              _c("h4", { staticClass: "modal-title" }, [
+                                _vm._v("Agregar nuevo proyecto")
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "close",
+                                  attrs: {
+                                    type: "button",
+                                    "data-dismiss": "modal",
+                                    "aria-label": "Close"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "span",
+                                    { attrs: { "aria-hidden": "true" } },
+                                    [_vm._v("×")]
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "modal-body" }, [
+                              _c("form", { attrs: { method: "post" } }, [
+                                _c("div", { staticClass: "card-body" }, [
+                                  _c("div", { staticClass: "row" }, [
+                                    _c("div", { staticClass: "col-sm-6" }, [
+                                      _c("div", { staticClass: "form-group" }, [
+                                        _c(
+                                          "label",
+                                          { attrs: { for: "titulo" } },
+                                          [_vm._v("Titulo")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          staticClass: "form-control",
+                                          attrs: {
+                                            type: "text",
+                                            id: "titulo",
+                                            placeholder: "Titulo del proyecto"
+                                          }
+                                        })
+                                      ])
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "col-sm-6" }, [
+                                      _c("div", { staticClass: "form-group" }, [
+                                        _c(
+                                          "label",
+                                          { attrs: { for: "compClient" } },
+                                          [_vm._v("Compañia/Cliente")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          staticClass: "form-control",
+                                          attrs: {
+                                            type: "text",
+                                            id: "compClient",
+                                            placeholder: "Compañia o cliente"
+                                          }
+                                        })
+                                      ])
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c(
+                                      "label",
+                                      { attrs: { for: "progreso" } },
+                                      [_vm._v("Progreso")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        type: "text",
+                                        id: "progreso",
+                                        value: "0%"
+                                      }
+                                    })
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "row" }, [
+                                    _c("div", { staticClass: "col-sm-6" }, [
+                                      _c("div", { staticClass: "form-group" }, [
+                                        _c(
+                                          "label",
+                                          { attrs: { for: "fechaIni" } },
+                                          [_vm._v("Fecha Inicio")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          staticClass: "form-control",
+                                          attrs: {
+                                            type: "date",
+                                            id: "fechaIni",
+                                            placeholder: "Fecha inicio"
+                                          }
+                                        })
+                                      ])
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "col-sm-6" }, [
+                                      _c("div", { staticClass: "form-group" }, [
+                                        _c(
+                                          "label",
+                                          { attrs: { for: "fechaFin" } },
+                                          [_vm._v("Fecha Final")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          staticClass: "form-control",
+                                          attrs: {
+                                            type: "date",
+                                            id: "fechaFin",
+                                            placeholder: "Fecha inicio"
+                                          }
+                                        })
+                                      ])
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c("label", { attrs: { for: "desc" } }, [
+                                      _vm._v("Descripción")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        type: "text",
+                                        id: "desc",
+                                        placeholder: "Descripción"
+                                      }
+                                    })
+                                  ]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "button",
+                                    {
+                                      staticClass: "btn btn-success btn-block",
+                                      attrs: { type: "submit" }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\r\n                    Guardar\r\n                  "
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ])
+                            ])
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "modal fade", attrs: { id: "editar" } },
+                      [
+                        _c("div", { staticClass: "modal-dialog" }, [
+                          _c("div", { staticClass: "modal-content" }, [
+                            _c("div", { staticClass: "modal-header" }, [
+                              _c("h4", { staticClass: "modal-title" }, [
+                                _vm._v("Editar Proyecto")
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "close",
+                                  attrs: {
+                                    type: "button",
+                                    "data-dismiss": "modal",
+                                    "aria-label": "Close"
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "span",
+                                    { attrs: { "aria-hidden": "true" } },
+                                    [_vm._v("×")]
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "modal-body" }, [
+                              _c("form", { attrs: { method: "post" } }, [
+                                _c("div", { staticClass: "card-body" }, [
+                                  _c("div", { staticClass: "row" }, [
+                                    _c("div", { staticClass: "col-sm-6" }, [
+                                      _c("div", { staticClass: "form-group" }, [
+                                        _c(
+                                          "label",
+                                          { attrs: { for: "tituloEditar" } },
+                                          [_vm._v("Titulo")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          staticClass: "form-control",
+                                          attrs: {
+                                            type: "text",
+                                            id: "tituloEditar",
+                                            value: "Proyecto 1",
+                                            placeholder: "Titulo del proyecto"
+                                          }
+                                        })
+                                      ])
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "col-sm-6" }, [
+                                      _c("div", { staticClass: "form-group" }, [
+                                        _c(
+                                          "label",
+                                          {
+                                            attrs: { for: "compClientEditar" }
+                                          },
+                                          [_vm._v("Compañia/Cliente")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          staticClass: "form-control",
+                                          attrs: {
+                                            type: "text",
+                                            id: "compClientEditar",
+                                            value: "Daniel Sunu",
+                                            placeholder: "Compañia o cliente"
+                                          }
+                                        })
+                                      ])
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c(
+                                      "label",
+                                      { attrs: { for: "progresoEditar" } },
+                                      [_vm._v("Progreso")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        type: "text",
+                                        id: "progresoEditar",
+                                        value: "0%"
+                                      }
+                                    })
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "row" }, [
+                                    _c("div", { staticClass: "col-sm-6" }, [
+                                      _c("div", { staticClass: "form-group" }, [
+                                        _c(
+                                          "label",
+                                          { attrs: { for: "fechaIniEditar" } },
+                                          [_vm._v("Fecha Inicio")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          staticClass: "form-control",
+                                          attrs: {
+                                            type: "date",
+                                            id: "fechaIniEditar",
+                                            value: "2019/11/27",
+                                            placeholder: "Fecha inicio"
+                                          }
+                                        })
+                                      ])
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("div", { staticClass: "col-sm-6" }, [
+                                      _c("div", { staticClass: "form-group" }, [
+                                        _c(
+                                          "label",
+                                          { attrs: { for: "fechaFinEditar" } },
+                                          [_vm._v("Fecha Final")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          staticClass: "form-control",
+                                          attrs: {
+                                            type: "date",
+                                            id: "fechaFinEditar",
+                                            value: "31/12/2019",
+                                            placeholder: "Fecha inicio"
+                                          }
+                                        })
+                                      ])
+                                    ])
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c(
+                                      "label",
+                                      { attrs: { for: "descEditar" } },
+                                      [_vm._v("Descripción")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        type: "text",
+                                        id: "descEditar",
+                                        placeholder: "Descripción"
+                                      }
+                                    })
+                                  ]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "button",
+                                    {
+                                      staticClass: "btn btn-success btn-block",
+                                      attrs: { type: "submit" }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\r\n                    Guardar\r\n                  "
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ])
+                            ])
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "tab-pane", attrs: { id: "inactivos" } },
+                      [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-12" }, [
+                            _c("div", { staticClass: "card" }, [
+                              _c("div", { staticClass: "card-header" }, [
+                                _c("div", { staticClass: "card-tools" }, [
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass: "input-group input-group-sm",
+                                      staticStyle: { width: "400px" }
+                                    },
+                                    [
+                                      _c("input", {
+                                        staticClass: "form-control float-right",
+                                        attrs: {
+                                          type: "text",
+                                          name: "table_search",
+                                          placeholder: "Buscar proyecto"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        { staticClass: "input-group-append" },
+                                        [
+                                          _c(
+                                            "button",
+                                            {
+                                              staticClass: "btn btn-default",
+                                              attrs: { type: "submit" }
+                                            },
+                                            [
+                                              _c("i", {
+                                                staticClass: "fas fa-search"
+                                              })
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "card-body table-responsive p-0",
+                                  staticStyle: { height: "200px" }
+                                },
+                                [
+                                  _c(
+                                    "table",
+                                    { staticClass: "table table-head-fixed" },
+                                    [
+                                      _c("thead", [
+                                        _c("tr", [
+                                          _c("th", [_vm._v("Titulo")]),
+                                          _vm._v(" "),
+                                          _c("th", [
+                                            _vm._v("Compañia/Cliente")
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("th", [_vm._v("Fecha Inicio")]),
+                                          _vm._v(" "),
+                                          _c("th", [_vm._v("Fecha Final")]),
+                                          _vm._v(" "),
+                                          _c("th", [_vm._v("Estatus")]),
+                                          _vm._v(" "),
+                                          _c("th", [_vm._v("Accion")])
+                                        ])
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("tbody", [
+                                        _c("tr", [
+                                          _c("td", [_vm._v("Proyecto 2")]),
+                                          _vm._v(" "),
+                                          _c("td", [_vm._v("Jose Jose")]),
+                                          _vm._v(" "),
+                                          _c("td", [_vm._v("30/11/2019")]),
+                                          _vm._v(" "),
+                                          _c("td", [_vm._v("31/12/2019")]),
+                                          _vm._v(" "),
+                                          _c("td", [
+                                            _c(
+                                              "span",
+                                              {
+                                                staticClass:
+                                                  "badge badge-warning"
+                                              },
+                                              [_vm._v("Inactivo")]
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("td", [
+                                            _c(
+                                              "button",
+                                              {
+                                                staticClass: "btn btn-warning",
+                                                attrs: { type: "button" }
+                                              },
+                                              [
+                                                _c("i", {
+                                                  staticClass:
+                                                    "fas fa-pencil-alt"
+                                                })
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "button",
+                                              {
+                                                staticClass: "btn btn-primary",
+                                                attrs: { type: "button" }
+                                              },
+                                              [
+                                                _c("i", {
+                                                  staticClass: "fas fa-eye"
+                                                })
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "button",
+                                              {
+                                                staticClass: "btn btn-danger",
+                                                attrs: { type: "button" }
+                                              },
+                                              [
+                                                _c("i", {
+                                                  staticClass:
+                                                    "fas fa-trash-alt"
+                                                })
+                                              ]
+                                            )
+                                          ])
+                                        ])
+                                      ])
+                                    ]
+                                  )
+                                ]
+                              )
+                            ])
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "tab-pane", attrs: { id: "eliminados" } },
+                      [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-12" }, [
+                            _c("div", { staticClass: "card" }, [
+                              _c("div", { staticClass: "card-header" }, [
+                                _c("div", { staticClass: "card-tools" }, [
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass: "input-group input-group-sm",
+                                      staticStyle: { width: "400px" }
+                                    },
+                                    [
+                                      _c("input", {
+                                        staticClass: "form-control float-right",
+                                        attrs: {
+                                          type: "text",
+                                          name: "table_search",
+                                          placeholder: "Buscar proyecto"
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        { staticClass: "input-group-append" },
+                                        [
+                                          _c(
+                                            "button",
+                                            {
+                                              staticClass: "btn btn-default",
+                                              attrs: { type: "submit" }
+                                            },
+                                            [
+                                              _c("i", {
+                                                staticClass: "fas fa-search"
+                                              })
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "card-body table-responsive p-0",
+                                  staticStyle: { height: "200px" }
+                                },
+                                [
+                                  _c(
+                                    "table",
+                                    { staticClass: "table table-head-fixed" },
+                                    [
+                                      _c("thead", [
+                                        _c("tr", [
+                                          _c("th", [_vm._v("Titulo")]),
+                                          _vm._v(" "),
+                                          _c("th", [
+                                            _vm._v("Compañia/Cliente")
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("th", [_vm._v("Fecha Inicio")]),
+                                          _vm._v(" "),
+                                          _c("th", [_vm._v("Fecha Final")]),
+                                          _vm._v(" "),
+                                          _c("th", [_vm._v("Estatus")]),
+                                          _vm._v(" "),
+                                          _c("th", [_vm._v("Accion")])
+                                        ])
+                                      ]),
+                                      _vm._v(" "),
+                                      _c("tbody", [
+                                        _c("tr", [
+                                          _c("td", [_vm._v("Proyecto 3")]),
+                                          _vm._v(" "),
+                                          _c("td", [_vm._v("Daniel Sunu")]),
+                                          _vm._v(" "),
+                                          _c("td", [_vm._v("27/11/2019")]),
+                                          _vm._v(" "),
+                                          _c("td", [_vm._v("31/12/2019")]),
+                                          _vm._v(" "),
+                                          _c("td", [
+                                            _c(
+                                              "span",
+                                              {
+                                                staticClass:
+                                                  "badge badge-danger"
+                                              },
+                                              [_vm._v("Eliminado")]
+                                            )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("td", [
+                                            _c(
+                                              "button",
+                                              {
+                                                staticClass: "btn btn-warning",
+                                                attrs: { type: "button" }
+                                              },
+                                              [
+                                                _c("i", {
+                                                  staticClass:
+                                                    "fas fa-pencil-alt"
+                                                })
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "button",
+                                              {
+                                                staticClass: "btn btn-primary",
+                                                attrs: { type: "button" }
+                                              },
+                                              [
+                                                _c("i", {
+                                                  staticClass: "fas fa-eye"
+                                                })
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "button",
+                                              {
+                                                staticClass: "btn btn-danger",
+                                                attrs: { type: "button" }
+                                              },
+                                              [
+                                                _c("i", {
+                                                  staticClass:
+                                                    "fas fa-trash-alt"
+                                                })
+                                              ]
+                                            )
+                                          ])
+                                        ])
+                                      ])
+                                    ]
+                                  )
+                                ]
+                              )
+                            ])
+                          ])
                         ])
                       ]
                     )
                   ])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "card-body table-responsive p-0",
-                    staticStyle: { height: "200px" }
-                  },
-                  [
-                    _c("table", { staticClass: "table table-head-fixed" }, [
-                      _c("thead", [
-                        _c("tr", [
-                          _c("th", [_vm._v("Titulo")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Compañia/Cliente")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Fecha Inicio")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Fecha Final")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Estatus")]),
-                          _vm._v(" "),
-                          _c("th", [_vm._v("Accion")])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("tbody", [
-                        _c("tr", [
-                          _c("td", [_vm._v("Proyecto 1")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Daniel Sunu")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("27/11/2019")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("31/12/2019")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c("span", { staticClass: "badge badge-success" }, [
-                              _vm._v("Activo")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "button",
-                              {
-                                staticClass: "btn btn-primary btn-block",
-                                attrs: {
-                                  type: "button",
-                                  "data-toggle": "modal",
-                                  "data-target": "#editar"
-                                }
-                              },
-                              [
-                                _vm._v(
-                                  "\r\n                          Editar\r\n                        "
-                                )
-                              ]
-                            )
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("Proyecto 2")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Jose Jose")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("30/11/2019")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("31/12/2019")]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c("span", { staticClass: "badge badge-danger" }, [
-                              _vm._v("Inactivo")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("td", [
-                            _c(
-                              "a",
-                              {
-                                staticClass: "btn btn-primary btn-block",
-                                attrs: { href: "#" }
-                              },
-                              [_c("b", [_vm._v("Editar")])]
-                            )
-                          ])
-                        ])
-                      ])
-                    ])
-                  ]
-                )
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "modal fade", attrs: { id: "agregar" } }, [
-        _c("div", { staticClass: "modal-dialog" }, [
-          _c("div", { staticClass: "modal-content" }, [
-            _c("div", { staticClass: "modal-header" }, [
-              _c("h4", { staticClass: "modal-title" }, [
-                _vm._v("Agregar nuevo proyecto")
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "close",
-                  attrs: {
-                    type: "button",
-                    "data-dismiss": "modal",
-                    "aria-label": "Close"
-                  }
-                },
-                [
-                  _c("span", { attrs: { "aria-hidden": "true" } }, [
-                    _vm._v("×")
-                  ])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "modal-body" }, [
-              _c("form", { attrs: { method: "post" } }, [
-                _c("div", { staticClass: "card-body" }, [
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "titulo" } }, [
-                      _vm._v("Titulo")
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "text",
-                        id: "titulo",
-                        placeholder: "Titulo del proyecto"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "compClient" } }, [
-                      _vm._v("Compañia/Cliente")
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "text",
-                        id: "compClient",
-                        placeholder: "Compañia o cliente"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "progreso" } }, [
-                      _vm._v("Progreso")
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: { type: "text", id: "progreso", value: "0%" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "fechaIni" } }, [
-                      _vm._v("Fecha Inicio")
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "date",
-                        id: "fechaIni",
-                        placeholder: "Fecha inicio"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "fechaFin" } }, [
-                      _vm._v("Fecha Final")
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "date",
-                        id: "fechaFin",
-                        placeholder: "Fecha inicio"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "desc" } }, [
-                      _vm._v("Descripción")
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "text",
-                        id: "desc",
-                        placeholder: "Descripción"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-primary",
-                      attrs: { type: "submit" }
-                    },
-                    [
-                      _vm._v(
-                        "\r\n                    Guardar\r\n                  "
-                      )
-                    ]
-                  )
-                ])
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "modal fade", attrs: { id: "editar" } }, [
-        _c("div", { staticClass: "modal-dialog" }, [
-          _c("div", { staticClass: "modal-content" }, [
-            _c("div", { staticClass: "modal-header" }, [
-              _c("h4", { staticClass: "modal-title" }, [
-                _vm._v("Editar Proyecto")
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "close",
-                  attrs: {
-                    type: "button",
-                    "data-dismiss": "modal",
-                    "aria-label": "Close"
-                  }
-                },
-                [
-                  _c("span", { attrs: { "aria-hidden": "true" } }, [
-                    _vm._v("×")
-                  ])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "modal-body" }, [
-              _c("form", { attrs: { method: "post" } }, [
-                _c("div", { staticClass: "card-body" }, [
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "tituloEditar" } }, [
-                      _vm._v("Titulo")
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "text",
-                        id: "tituloEditar",
-                        value: "Proyecto 1",
-                        placeholder: "Titulo del proyecto"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "compClientEditar" } }, [
-                      _vm._v("Compañia/Cliente")
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "text",
-                        id: "compClientEditar",
-                        value: "Daniel Sunu",
-                        placeholder: "Compañia o cliente"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "progresoEditar" } }, [
-                      _vm._v("Progreso")
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: { type: "text", id: "progresoEditar", value: "0%" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "fechaIniEditar" } }, [
-                      _vm._v("Fecha Inicio")
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "date",
-                        id: "fechaIniEditar",
-                        value: "2019/11/27",
-                        placeholder: "Fecha inicio"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "fechaFinEditar" } }, [
-                      _vm._v("Fecha Final")
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "date",
-                        id: "fechaFinEditar",
-                        value: "31/12/2019",
-                        placeholder: "Fecha inicio"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-group" }, [
-                    _c("label", { attrs: { for: "descEditar" } }, [
-                      _vm._v("Descripción")
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "text",
-                        id: "descEditar",
-                        placeholder: "Descripción"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-primary",
-                      attrs: { type: "submit" }
-                    },
-                    [
-                      _vm._v(
-                        "\r\n                    Guardar\r\n                  "
-                      )
-                    ]
-                  )
                 ])
               ])
             ])
@@ -38532,17 +39445,15 @@ var staticRenderFns = [
                           _vm._v(" "),
                           _c("th", [_vm._v("Fecha Final")]),
                           _vm._v(" "),
-                          _c("th", [_vm._v("Estatus")])
+                          _c("th", [_vm._v("Estatus")]),
+                          _vm._v(" "),
+                          _c("th", [_vm._v("Accion")])
                         ])
                       ]),
                       _vm._v(" "),
                       _c("tbody", [
                         _c("tr", [
-                          _c("td", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Proyecto 1")
-                            ])
-                          ]),
+                          _c("td", [_vm._v("Proyecto 1")]),
                           _vm._v(" "),
                           _c("td", [_vm._v("Daniel Sunu")]),
                           _vm._v(" "),
@@ -38554,15 +39465,22 @@ var staticRenderFns = [
                             _c("span", { staticClass: "badge badge-success" }, [
                               _vm._v("Activo")
                             ])
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "btn btn-primary",
+                                attrs: { type: "button" }
+                              },
+                              [_c("i", { staticClass: "fas fa-eye" })]
+                            )
                           ])
                         ]),
                         _vm._v(" "),
                         _c("tr", [
-                          _c("td", [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v("Proyecto 2")
-                            ])
-                          ]),
+                          _c("td", [_vm._v("Proyecto 2")]),
                           _vm._v(" "),
                           _c("td", [_vm._v("Jose Jose")]),
                           _vm._v(" "),
@@ -38574,6 +39492,17 @@ var staticRenderFns = [
                             _c("span", { staticClass: "badge badge-danger" }, [
                               _vm._v("Inactivo")
                             ])
+                          ]),
+                          _vm._v(" "),
+                          _c("td", [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "btn btn-primary",
+                                attrs: { type: "button" }
+                              },
+                              [_c("i", { staticClass: "fas fa-eye" })]
+                            )
                           ])
                         ])
                       ])
@@ -38748,8 +39677,7 @@ var staticRenderFns = [
                                             _c(
                                               "button",
                                               {
-                                                staticClass:
-                                                  "btn btn-primary btn-block",
+                                                staticClass: "btn btn-warning",
                                                 attrs: {
                                                   type: "button",
                                                   "data-toggle": "modal",
@@ -38757,9 +39685,10 @@ var staticRenderFns = [
                                                 }
                                               },
                                               [
-                                                _vm._v(
-                                                  "\r\n                          Editar\r\n                        "
-                                                )
+                                                _c("i", {
+                                                  staticClass:
+                                                    "fas fa-pencil-alt"
+                                                })
                                               ]
                                             )
                                           ])
@@ -38776,13 +39705,17 @@ var staticRenderFns = [
                                           _vm._v(" "),
                                           _c("td", [
                                             _c(
-                                              "a",
+                                              "button",
                                               {
-                                                staticClass:
-                                                  "btn btn-primary btn-block",
-                                                attrs: { href: "#" }
+                                                staticClass: "btn btn-warning",
+                                                attrs: { type: "button" }
                                               },
-                                              [_c("b", [_vm._v("Editar")])]
+                                              [
+                                                _c("i", {
+                                                  staticClass:
+                                                    "fas fa-pencil-alt"
+                                                })
+                                              ]
                                             )
                                           ])
                                         ])
@@ -38849,38 +39782,44 @@ var staticRenderFns = [
                                     })
                                   ]),
                                   _vm._v(" "),
-                                  _c("div", { staticClass: "form-group" }, [
-                                    _c(
-                                      "label",
-                                      { attrs: { for: "fechaIni" } },
-                                      [_vm._v("Fecha Inicio")]
-                                    ),
+                                  _c("div", { staticClass: "row" }, [
+                                    _c("div", { staticClass: "col-sm-6" }, [
+                                      _c("div", { staticClass: "form-group" }, [
+                                        _c(
+                                          "label",
+                                          { attrs: { for: "fechaIni" } },
+                                          [_vm._v("Fecha Inicio")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          staticClass: "form-control",
+                                          attrs: {
+                                            type: "date",
+                                            id: "fechaIni",
+                                            placeholder: "Fecha inicio"
+                                          }
+                                        })
+                                      ])
+                                    ]),
                                     _vm._v(" "),
-                                    _c("input", {
-                                      staticClass: "form-control",
-                                      attrs: {
-                                        type: "date",
-                                        id: "fechaIni",
-                                        placeholder: "Fecha inicio"
-                                      }
-                                    })
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "form-group" }, [
-                                    _c(
-                                      "label",
-                                      { attrs: { for: "fechaFin" } },
-                                      [_vm._v("Fecha Final")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("input", {
-                                      staticClass: "form-control",
-                                      attrs: {
-                                        type: "date",
-                                        id: "fechaFin",
-                                        placeholder: "Fecha inicio"
-                                      }
-                                    })
+                                    _c("div", { staticClass: "col-sm-6" }, [
+                                      _c("div", { staticClass: "form-group" }, [
+                                        _c(
+                                          "label",
+                                          { attrs: { for: "fechaFin" } },
+                                          [_vm._v("Fecha Final")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c("input", {
+                                          staticClass: "form-control",
+                                          attrs: {
+                                            type: "date",
+                                            id: "fechaFin",
+                                            placeholder: "Fecha inicio"
+                                          }
+                                        })
+                                      ])
+                                    ])
                                   ]),
                                   _vm._v(" "),
                                   _c("div", { staticClass: "form-group" }, [
@@ -38901,7 +39840,7 @@ var staticRenderFns = [
                                   _c(
                                     "button",
                                     {
-                                      staticClass: "btn btn-primary",
+                                      staticClass: "btn btn-success btn-block",
                                       attrs: { type: "submit" }
                                     },
                                     [
@@ -39014,8 +39953,7 @@ var staticRenderFns = [
                                             _c(
                                               "button",
                                               {
-                                                staticClass:
-                                                  "btn btn-primary btn-block",
+                                                staticClass: "btn btn-warning",
                                                 attrs: {
                                                   type: "button",
                                                   "data-toggle": "modal",
@@ -39023,9 +39961,10 @@ var staticRenderFns = [
                                                 }
                                               },
                                               [
-                                                _vm._v(
-                                                  "\r\n                          Editar\r\n                        "
-                                                )
+                                                _c("i", {
+                                                  staticClass:
+                                                    "fas fa-pencil-alt"
+                                                })
                                               ]
                                             )
                                           ])
@@ -39129,46 +40068,85 @@ var staticRenderFns = [
                                     })
                                   ]),
                                   _vm._v(" "),
-                                  _c("div", { staticClass: "form-group" }, [
-                                    _c("label", [_vm._v("Tipo de factura")]),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "form-check" }, [
-                                      _c("input", {
-                                        staticClass: "form-check-input",
-                                        attrs: { type: "radio", name: "radio1" }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "label",
-                                        { staticClass: "form-check-label" },
-                                        [_vm._v("No")]
-                                      )
+                                  _c("label", [_vm._v("Tipo de factura")]),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "row" }, [
+                                    _c("div", { staticClass: "col-sm-4" }, [
+                                      _c("div", { staticClass: "form-group" }, [
+                                        _c(
+                                          "div",
+                                          { staticClass: "form-check" },
+                                          [
+                                            _c("input", {
+                                              staticClass: "form-check-input",
+                                              attrs: {
+                                                type: "radio",
+                                                name: "radio1"
+                                              }
+                                            }),
+                                            _vm._v(" "),
+                                            _c(
+                                              "label",
+                                              {
+                                                staticClass: "form-check-label"
+                                              },
+                                              [_vm._v("No")]
+                                            )
+                                          ]
+                                        )
+                                      ])
                                     ]),
                                     _vm._v(" "),
-                                    _c("div", { staticClass: "form-check" }, [
-                                      _c("input", {
-                                        staticClass: "form-check-input",
-                                        attrs: { type: "radio", name: "radio1" }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "label",
-                                        { staticClass: "form-check-label" },
-                                        [_vm._v("Fijo")]
-                                      )
+                                    _c("div", { staticClass: "col-sm-4" }, [
+                                      _c("div", { staticClass: "form-group" }, [
+                                        _c(
+                                          "div",
+                                          { staticClass: "form-check" },
+                                          [
+                                            _c("input", {
+                                              staticClass: "form-check-input",
+                                              attrs: {
+                                                type: "radio",
+                                                name: "radio1"
+                                              }
+                                            }),
+                                            _vm._v(" "),
+                                            _c(
+                                              "label",
+                                              {
+                                                staticClass: "form-check-label"
+                                              },
+                                              [_vm._v("Fijo")]
+                                            )
+                                          ]
+                                        )
+                                      ])
                                     ]),
                                     _vm._v(" "),
-                                    _c("div", { staticClass: "form-check" }, [
-                                      _c("input", {
-                                        staticClass: "form-check-input",
-                                        attrs: { type: "radio", name: "radio1" }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "label",
-                                        { staticClass: "form-check-label" },
-                                        [_vm._v("Por hora")]
-                                      )
+                                    _c("div", { staticClass: "col-sm-4" }, [
+                                      _c("div", { staticClass: "form-group" }, [
+                                        _c(
+                                          "div",
+                                          { staticClass: "form-check" },
+                                          [
+                                            _c("input", {
+                                              staticClass: "form-check-input",
+                                              attrs: {
+                                                type: "radio",
+                                                name: "radio1"
+                                              }
+                                            }),
+                                            _vm._v(" "),
+                                            _c(
+                                              "label",
+                                              {
+                                                staticClass: "form-check-label"
+                                              },
+                                              [_vm._v("Por hora")]
+                                            )
+                                          ]
+                                        )
+                                      ])
                                     ])
                                   ]),
                                   _vm._v(" "),
@@ -39225,7 +40203,7 @@ var staticRenderFns = [
                                   _c(
                                     "button",
                                     {
-                                      staticClass: "btn btn-primary",
+                                      staticClass: "btn btn-success btn-block",
                                       attrs: { type: "submit" }
                                     },
                                     [
@@ -39331,8 +40309,7 @@ var staticRenderFns = [
                                             _c(
                                               "button",
                                               {
-                                                staticClass:
-                                                  "btn btn-primary btn-block",
+                                                staticClass: "btn btn-warning",
                                                 attrs: {
                                                   type: "button",
                                                   "data-toggle": "modal",
@@ -39340,9 +40317,10 @@ var staticRenderFns = [
                                                 }
                                               },
                                               [
-                                                _vm._v(
-                                                  "\r\n                          Editar\r\n                        "
-                                                )
+                                                _c("i", {
+                                                  staticClass:
+                                                    "fas fa-pencil-alt"
+                                                })
                                               ]
                                             )
                                           ])
@@ -39431,7 +40409,7 @@ var staticRenderFns = [
                                   _c(
                                     "button",
                                     {
-                                      staticClass: "btn btn-primary",
+                                      staticClass: "btn btn-success btn-block",
                                       attrs: { type: "submit" }
                                     },
                                     [
@@ -39448,6 +40426,377 @@ var staticRenderFns = [
                       ]
                     )
                   ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/usuarios.vue?vue&type=template&id=036a29d0&":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/usuarios.vue?vue&type=template&id=036a29d0& ***!
+  \***********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content-wrapper" }, [
+      _c("div", { staticClass: "content-header" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "row mb-2" }, [
+            _c("div", { staticClass: "col-sm-6" }, [
+              _c("h1", { staticClass: "m-0 text-dark" }, [_vm._v("Usuarios")])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "content" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-12" }, [
+              _c("div", { staticClass: "card" }, [
+                _c("div", { staticClass: "card-header" }, [
+                  _c("h3", { staticClass: "card-title" }, [
+                    _vm._v("Lista de usuarios")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-tools" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "input-group input-group-sm",
+                        staticStyle: { width: "150px" }
+                      },
+                      [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-default",
+                            attrs: {
+                              type: "button",
+                              "data-toggle": "modal",
+                              "data-target": "#agregar"
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\r\n                      Agregar Usuario\r\n                    "
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "input-group input-group-sm",
+                        staticStyle: { width: "300px" }
+                      },
+                      [
+                        _c("input", {
+                          staticClass: "form-control float-right",
+                          attrs: {
+                            type: "text",
+                            name: "table_search",
+                            placeholder: "Buscar por nombre de usuario"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "input-group-append" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-default",
+                              attrs: { type: "submit" }
+                            },
+                            [_c("i", { staticClass: "fas fa-search" })]
+                          )
+                        ])
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "card-body table-responsive p-0",
+                    staticStyle: { height: "200px" }
+                  },
+                  [
+                    _c("table", { staticClass: "table table-head-fixed" }, [
+                      _c("thead", [
+                        _c("tr", [
+                          _c("th", [_vm._v("ID")]),
+                          _vm._v(" "),
+                          _c("th", [_vm._v("Nombre usuario")]),
+                          _vm._v(" "),
+                          _c("th", [_vm._v("Correo")]),
+                          _vm._v(" "),
+                          _c("th", [_vm._v("Celular")]),
+                          _vm._v(" "),
+                          _c("th", [_vm._v("Balance")]),
+                          _vm._v(" "),
+                          _c("th", [_vm._v("Accion")])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("tbody", [
+                        _c("tr", [
+                          _c("td", [_vm._v("1")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Daniel Sunu")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Deslove25@yahoo.com")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("+526439854")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("$ 0")]),
+                          _vm._v(" "),
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-primary",
+                              attrs: { type: "button" }
+                            },
+                            [_c("i", { staticClass: "fas fa-eye" })]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", [_vm._v("2")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("Junior Santos")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("junioryl@hotmail.es")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("34262242")]),
+                          _vm._v(" "),
+                          _c("td", [_vm._v("$ 0")]),
+                          _vm._v(" "),
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-primary",
+                              attrs: { type: "button" }
+                            },
+                            [_c("i", { staticClass: "fas fa-eye" })]
+                          )
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "modal fade", attrs: { id: "agregar" } }, [
+        _c("div", { staticClass: "modal-dialog" }, [
+          _c("div", { staticClass: "modal-content" }, [
+            _c("div", { staticClass: "modal-header" }, [
+              _c("h4", { staticClass: "modal-title" }, [
+                _vm._v("Agregar nuevo proyecto")
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "close",
+                  attrs: {
+                    type: "button",
+                    "data-dismiss": "modal",
+                    "aria-label": "Close"
+                  }
+                },
+                [
+                  _c("span", { attrs: { "aria-hidden": "true" } }, [
+                    _vm._v("×")
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "modal-body" }, [
+              _c("form", { attrs: { method: "post" } }, [
+                _c("div", { staticClass: "card-body" }, [
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { attrs: { for: "nombre" } }, [
+                      _vm._v("Nombre")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        id: "nombre",
+                        placeholder: "Nombre del usuario"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-sm-6" }, [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { attrs: { for: "ape_p" } }, [
+                          _vm._v("Apellido Paterno")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "ape_p",
+                            placeholder: "Apellido Paterno"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-sm-6" }, [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { attrs: { for: "ape_m" } }, [
+                          _vm._v("Apellido Materno")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "ape_m",
+                            placeholder: "Apellido Materno"
+                          }
+                        })
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", { attrs: { for: "tel" } }, [
+                      _vm._v("Telefono")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        id: "tel",
+                        placeholder: "Telefono"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-sm-6" }, [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { attrs: { for: "city" } }, [
+                          _vm._v("Ciudad")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "city",
+                            placeholder: "Ciudad"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-sm-6" }, [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { attrs: { for: "pais" } }, [
+                          _vm._v("País")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "pais",
+                            placeholder: "País"
+                          }
+                        })
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-sm-6" }, [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { attrs: { for: "correo" } }, [
+                          _vm._v("Correo")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "email",
+                            id: "correo",
+                            placeholder: "Correo"
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-sm-6" }, [
+                      _c("div", { staticClass: "form-group" }, [
+                        _c("label", { attrs: { for: "pass" } }, [
+                          _vm._v("Contraseña")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "password",
+                            id: "pass",
+                            placeholder: "Contraseña"
+                          }
+                        })
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-success btn-block",
+                      attrs: { type: "submit" }
+                    },
+                    [
+                      _vm._v(
+                        "\r\n                    Guardar\r\n                  "
+                      )
+                    ]
+                  )
                 ])
               ])
             ])
@@ -51625,6 +52974,7 @@ Vue.component('metodos-retiro', __webpack_require__(/*! ./components/metodos-ret
 Vue.component('crear-proyecto', __webpack_require__(/*! ./components/crear-proyecto.vue */ "./resources/js/components/crear-proyecto.vue")["default"]);
 Vue.component('mis-proyectos', __webpack_require__(/*! ./components/mis-proyectos.vue */ "./resources/js/components/mis-proyectos.vue")["default"]);
 Vue.component('proyectos', __webpack_require__(/*! ./components/proyectos.vue */ "./resources/js/components/proyectos.vue")["default"]);
+Vue.component('usuarios', __webpack_require__(/*! ./components/usuarios.vue */ "./resources/js/components/usuarios.vue")["default"]);
 var app = new Vue({
   el: '#app',
   data: {
@@ -52031,6 +53381,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_proyectos_vue_vue_type_template_id_31b76b53___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_proyectos_vue_vue_type_template_id_31b76b53___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/usuarios.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/components/usuarios.vue ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _usuarios_vue_vue_type_template_id_036a29d0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./usuarios.vue?vue&type=template&id=036a29d0& */ "./resources/js/components/usuarios.vue?vue&type=template&id=036a29d0&");
+/* harmony import */ var _usuarios_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./usuarios.vue?vue&type=script&lang=js& */ "./resources/js/components/usuarios.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _usuarios_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _usuarios_vue_vue_type_template_id_036a29d0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _usuarios_vue_vue_type_template_id_036a29d0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/usuarios.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/usuarios.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/usuarios.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_usuarios_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./usuarios.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/usuarios.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_usuarios_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/usuarios.vue?vue&type=template&id=036a29d0&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/usuarios.vue?vue&type=template&id=036a29d0& ***!
+  \*****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_usuarios_vue_vue_type_template_id_036a29d0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./usuarios.vue?vue&type=template&id=036a29d0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/usuarios.vue?vue&type=template&id=036a29d0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_usuarios_vue_vue_type_template_id_036a29d0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_usuarios_vue_vue_type_template_id_036a29d0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

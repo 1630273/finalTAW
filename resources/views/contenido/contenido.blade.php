@@ -46,4 +46,8 @@
 <proyectos></proyectos>
 </template>
 
+<template v-if="menu==8">
+<usuarios></usuarios>
+</template>
+
 @endsection

@@ -43,22 +43,36 @@
                       <th>Fecha Inicio</th>
                       <th>Fecha Final</th>
                       <th>Estatus</th>
+                      <th>Accion</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td><a href="#">Proyecto 1</a></td>
+                      <td>Proyecto 1</td>
                       <td>Daniel Sunu</td>
                       <td>27/11/2019</td>
                       <td>31/12/2019</td>
-                      <td><span class="badge badge-success">Activo</span></td>
+                      <td><span class="badge badge-success">Activo</span>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-primary">
+                          <i class="fas fa-eye"></i>
+                        </button>
+                      </td>
                     </tr>
                     <tr>
-                      <td><a href="#">Proyecto 2</a></td>
+                      <td>Proyecto 2</td>
                       <td>Jose Jose</td>
                       <td>30/11/2019</td>
                       <td>31/12/2019</td>
-                      <td><span class="badge badge-danger">Inactivo</span></td>
+                      <td>
+                        <span class="badge badge-danger">Inactivo</span>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-primary">
+                          <i class="fas fa-eye"></i>
+                        </button>
+                      </td>
                     </tr>
                   </tbody>
                 </table>

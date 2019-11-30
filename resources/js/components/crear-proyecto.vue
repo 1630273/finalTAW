@@ -1,28 +1,55 @@
 <template>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
-  <!-- Content Header (Page header) -->
-  <div class="content-header">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0 text-dark">Crear proyectos</h1>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
+          </div>
+        </div>
       </div><!-- /.container-fluid -->
     </div>
-    <!-- /.content-header -->
+
+
+
+
     <!-- Main content -->
     <div class="content">
-
       <div class="container-fluid">
+        <div class="row">
 
-        <!-- /.row -->
+
+
+          <!-- /.col -->
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header p-2">
+                <ul class="nav nav-pills">
+
+                  <li class="nav-item"><a class="nav-link active" href="#activos" data-toggle="tab">Activos</a></li>
+
+                  <li class="nav-item"><a class="nav-link" href="#inactivos" data-toggle="tab">Inactivos</a></li>
+
+                  <li class="nav-item"><a class="nav-link" href="#eliminados" data-toggle="tab">Eliminados</a></li>
+
+                </ul>
+
+              </div><!-- /.card-header -->
+
+
+
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="active tab-pane" id="activos">
+
+
+                            <!-- /.row -->
         <div class="row">
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Crear Proyecto</h3>
 
                  <div class="card-tools">
 
@@ -59,19 +86,15 @@
                       <td>31/12/2019</td>
                       <td><span class="badge badge-success">Activo</span></td>
                       <td>
-                        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#editar">
-                          Editar
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editar">
+                          <i class="fas fa-pencil-alt"></i>
                         </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Proyecto 2</td>
-                      <td>Jose Jose</td>
-                      <td>30/11/2019</td>
-                      <td>31/12/2019</td>
-                      <td><span class="badge badge-danger">Inactivo</span></td>
-                      <td>
-                        <a href="#" class="btn btn-primary btn-block"><b>Editar</b></a>
+                        <button type="button" class="btn btn-primary">
+                          <i class="fas fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger">
+                          <i class="fas fa-trash-alt"></i>
+                        </button>
                       </td>
                     </tr>
                   </tbody>
@@ -84,10 +107,8 @@
             <!-- /.card -->
           </div>
         </div>
-        <!-- /.row -->
-      </div>
-    </div>
-    <!-- /.content -->
+
+                  </div>
 
 
 <div class="modal fade" id="agregar">
@@ -105,14 +126,20 @@
               <form method="post">
                 <div class="card-body">
 
-                  <div class="form-group">
-                    <label for="titulo">Titulo</label>
-                    <input type="text" class="form-control" id="titulo" placeholder="Titulo del proyecto">
-                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="titulo">Titulo</label>
+                        <input type="text" class="form-control" id="titulo" placeholder="Titulo del proyecto">
+                      </div>
+                    </div>
 
-                  <div class="form-group">
-                    <label for="compClient">Compañia/Cliente</label>
-                    <input type="text" class="form-control" id="compClient" placeholder="Compañia o cliente">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="compClient">Compañia/Cliente</label>
+                        <input type="text" class="form-control" id="compClient" placeholder="Compañia o cliente">
+                      </div>
+                    </div>
                   </div>
 
                   <div class="form-group">
@@ -120,14 +147,20 @@
                     <input type="text" class="form-control" id="progreso" value="0%">
                   </div>
 
-                  <div class="form-group">
-                    <label for="fechaIni">Fecha Inicio</label>
-                    <input type="date" class="form-control" id="fechaIni" placeholder="Fecha inicio">
-                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="fechaIni">Fecha Inicio</label>
+                        <input type="date" class="form-control" id="fechaIni" placeholder="Fecha inicio">
+                      </div>
+                    </div>
 
-                  <div class="form-group">
-                    <label for="fechaFin">Fecha Final</label>
-                    <input type="date" class="form-control" id="fechaFin" placeholder="Fecha inicio">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="fechaFin">Fecha Final</label>
+                        <input type="date" class="form-control" id="fechaFin" placeholder="Fecha inicio">
+                      </div>
+                    </div>
                   </div>
 
                   <div class="form-group">
@@ -136,7 +169,7 @@
                   </div>
                 <!-- /.card-body -->
 
-                  <button type="submit" class="btn btn-primary">
+                  <button type="submit" class="btn btn-success btn-block">
                     Guardar
                   </button>
               </div>
@@ -148,6 +181,9 @@
       </div>
       <!-- Fin modal -->
     </div>
+
+
+
 
 
 <div class="modal fade" id="editar">
@@ -165,14 +201,20 @@
               <form method="post">
                 <div class="card-body">
 
-                  <div class="form-group">
-                    <label for="tituloEditar">Titulo</label>
-                    <input type="text" class="form-control" id="tituloEditar" value="Proyecto 1" placeholder="Titulo del proyecto">
-                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="tituloEditar">Titulo</label>
+                        <input type="text" class="form-control" id="tituloEditar" value="Proyecto 1" placeholder="Titulo del proyecto">
+                      </div>
+                    </div>
 
-                  <div class="form-group">
-                    <label for="compClientEditar">Compañia/Cliente</label>
-                    <input type="text" class="form-control" id="compClientEditar" value="Daniel Sunu" placeholder="Compañia o cliente">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="compClientEditar">Compañia/Cliente</label>
+                        <input type="text" class="form-control" id="compClientEditar" value="Daniel Sunu" placeholder="Compañia o cliente">
+                      </div>
+                    </div>
                   </div>
 
                   <div class="form-group">
@@ -180,14 +222,20 @@
                     <input type="text" class="form-control" id="progresoEditar" value="0%">
                   </div>
 
-                  <div class="form-group">
-                    <label for="fechaIniEditar">Fecha Inicio</label>
-                    <input type="date" class="form-control" id="fechaIniEditar" value="2019/11/27" placeholder="Fecha inicio">
-                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="fechaIniEditar">Fecha Inicio</label>
+                        <input type="date" class="form-control" id="fechaIniEditar" value="2019/11/27" placeholder="Fecha inicio">
+                      </div>
+                    </div>
 
-                  <div class="form-group">
-                    <label for="fechaFinEditar">Fecha Final</label>
-                    <input type="date" class="form-control" id="fechaFinEditar" value="31/12/2019" placeholder="Fecha inicio">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="fechaFinEditar">Fecha Final</label>
+                        <input type="date" class="form-control" id="fechaFinEditar" value="31/12/2019" placeholder="Fecha inicio">
+                      </div>
+                    </div>
                   </div>
 
                   <div class="form-group">
@@ -196,7 +244,7 @@
                   </div>
                 <!-- /.card-body -->
 
-                  <button type="submit" class="btn btn-primary">
+                  <button type="submit" class="btn btn-success btn-block">
                     Guardar
                   </button>
               </div>
@@ -208,6 +256,181 @@
       </div>
       <!-- Fin modal -->
     </div>
+
+
+
+
+
+
+
+
+                  <!-- /.tab-pane -->
+                  <div class="tab-pane" id="inactivos">
+
+                    <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+
+                 <div class="card-tools">
+
+                  <div class="input-group input-group-sm" style="width: 400px;">
+                    <input type="text" name="table_search" class="form-control float-right" placeholder="Buscar proyecto">
+
+                    <div class="input-group-append">
+                      <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0" style="height: 200px;">
+                <table class="table table-head-fixed">
+                  <thead>
+                    <tr>
+                      <th>Titulo</th>
+                      <th>Compañia/Cliente</th>
+                      <th>Fecha Inicio</th>
+                      <th>Fecha Final</th>
+                      <th>Estatus</th>
+                      <th>Accion</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Proyecto 2</td>
+                      <td>Jose Jose</td>
+                      <td>30/11/2019</td>
+                      <td>31/12/2019</td>
+                      <td><span class="badge badge-warning">Inactivo</span></td>
+                      <td>
+                        <button type="button" class="btn btn-warning">
+                          <i class="fas fa-pencil-alt"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          <i class="fas fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger">
+                          <i class="fas fa-trash-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <div class="tab-pane" id="eliminados">
+                    <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+
+                 <div class="card-tools">
+
+                  <div class="input-group input-group-sm" style="width: 400px;">
+                    <input type="text" name="table_search" class="form-control float-right" placeholder="Buscar proyecto">
+
+                    <div class="input-group-append">
+                      <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0" style="height: 200px;">
+                <table class="table table-head-fixed">
+                  <thead>
+                    <tr>
+                      <th>Titulo</th>
+                      <th>Compañia/Cliente</th>
+                      <th>Fecha Inicio</th>
+                      <th>Fecha Final</th>
+                      <th>Estatus</th>
+                      <th>Accion</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Proyecto 3</td>
+                      <td>Daniel Sunu</td>
+                      <td>27/11/2019</td>
+                      <td>31/12/2019</td>
+                      <td><span class="badge badge-danger">Eliminado</span></td>
+                      <td>
+                        <button type="button" class="btn btn-warning">
+                          <i class="fas fa-pencil-alt"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          <i class="fas fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger">
+                          <i class="fas fa-trash-alt"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+
+                  </div>
+                  <!-- /.tab-pane -->
+
+
+
+
+
+
+
+
+
+                </div>
+                <!-- /.tab-content -->
+              </div><!-- /.card-body -->
+            </div>
+            <!-- /.nav-tabs-custom -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+
+
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+
+
+
+
+
   </div>
 <!-- /.content-wrapper -->
 
