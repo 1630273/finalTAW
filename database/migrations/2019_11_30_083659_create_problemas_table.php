@@ -14,7 +14,7 @@ class CreateProblemasTable extends Migration
     public function up()
     {
         Schema::create('problemas', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->unsignedBigInteger('id_usuario');
             $table->unsignedBigInteger('id_proyecto');
             $table->string('descripcion');

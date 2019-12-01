@@ -7,7 +7,7 @@
 </template>
 
 <template v-if="menu==1">
-<metodos-retiro></metodos-retiro>
+<anidado></anidado>
 </template>
 
 <template v-if="menu==2">
@@ -44,6 +44,26 @@
 
 <template v-if="menu==8">
 <usuarios></usuarios>
+</template>
+
+<template v-if="menu==9">
+<servicios></servicios>
+</template>
+
+<template v-if="menu==10">
+<actividades></actividades>
+</template>
+
+<template v-if="menu==11">
+<tareas></tareas>
+</template>
+
+<template v-if="menu==12">
+<problemas></problemas>
+</template>
+
+<template v-if="menu==13">
+<usuarios-proyectos></usuarios-proyectos>
 </template>
 
 @endsection
