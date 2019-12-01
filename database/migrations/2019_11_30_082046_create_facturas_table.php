@@ -14,7 +14,7 @@ class CreateFacturasTable extends Migration
     public function up()
     {
         Schema::create('facturas', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->unsignedBigInteger('id_usuario');
             $table->unsignedBigInteger('id_gasto');
             $table->string('asunto');
@@ -22,7 +22,7 @@ class CreateFacturasTable extends Migration
             $table->double('monto');
             $table->double('descuento');
             $table->foreign('id_usuario')->references('id')->on('users')->onDelete('cascade');
-          //  $table->foreign('id_gasto')->references('id')->on('gastos')->onDelete('cascade');
+            $table->foreign('id_gasto')->references('id')->on('gastos')->onDelete('cascade');
             $table->timestamps();
         });
     }
