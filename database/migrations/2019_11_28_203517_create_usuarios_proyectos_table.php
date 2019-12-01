@@ -14,7 +14,7 @@ class CreateUsuariosProyectosTable extends Migration
     public function up()
     {
         Schema::create('usuarios_proyectos', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->unsignedBigInteger('id_proyecto');
             $table->unsignedBigInteger('id_usuario');
             $table->foreign('id_proyecto')->references('id')->on('proyectos')->onDelete('cascade');

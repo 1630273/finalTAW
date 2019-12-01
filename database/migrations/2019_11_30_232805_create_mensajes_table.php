@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProblemasTable extends Migration
+class CreateMensajesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,14 @@ class CreateProblemasTable extends Migration
      */
     public function up()
     {
-        Schema::create('problemas', function (Blueprint $table) {
+        Schema::create('mensajes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('id_usuario');
             $table->unsignedBigInteger('id_proyecto');
-            $table->string('descripcion');
-            $table->integer('status');
+            $table->unsignedBigInteger('id_usuario');
+            $table->string('mensaje');          
             $table->date('fecha');
-            $table->foreign('id_usuario')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('id_proyecto')->references('id')->on('proyectos')->onDelete('cascade');            
+            $table->foreign('id_proyecto')->references('id')->on('proyectos')->onDelete('cascade');
+            $table->foreign('id_usuario')->references('id')->on('users')->onDelete('cascade');            
             $table->timestamps();
         });
     }
@@ -33,6 +32,6 @@ class CreateProblemasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('problemas');
+        Schema::dropIfExists('mensajes');
     }
 }
