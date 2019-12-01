@@ -2827,6 +2827,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -2844,15 +2849,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -39631,7 +39627,7 @@ var staticRenderFns = [
                                         },
                                         [
                                           _vm._v(
-                                            "\r\n                      Nueva Actividad\r\n                    "
+                                            "\n                      Nueva Actividad\n                    "
                                           )
                                         ]
                                       )
@@ -39655,6 +39651,8 @@ var staticRenderFns = [
                                         _c("tr", [
                                           _c("th", [_vm._v("Titulo")]),
                                           _vm._v(" "),
+                                          _c("th", [_vm._v("Presupuesto")]),
+                                          _vm._v(" "),
                                           _c("th", [_vm._v("Fecha Inicio")]),
                                           _vm._v(" "),
                                           _c("th", [_vm._v("Fecha Final")]),
@@ -39668,6 +39666,8 @@ var staticRenderFns = [
                                           _c("td", [
                                             _vm._v("Crear base de datos")
                                           ]),
+                                          _vm._v(" "),
+                                          _c("td", [_vm._v("2000.00")]),
                                           _vm._v(" "),
                                           _c("td", [_vm._v("27/11/2019")]),
                                           _vm._v(" "),
@@ -39782,6 +39782,23 @@ var staticRenderFns = [
                                     })
                                   ]),
                                   _vm._v(" "),
+                                  _c("div", { staticClass: "form-group" }, [
+                                    _c(
+                                      "label",
+                                      { attrs: { for: "presupuesto" } },
+                                      [_vm._v("Presupuesto")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("input", {
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        type: "text",
+                                        id: "Presupuesto",
+                                        placeholder: ""
+                                      }
+                                    })
+                                  ]),
+                                  _vm._v(" "),
                                   _c("div", { staticClass: "row" }, [
                                     _c("div", { staticClass: "col-sm-6" }, [
                                       _c("div", { staticClass: "form-group" }, [
@@ -39845,7 +39862,7 @@ var staticRenderFns = [
                                     },
                                     [
                                       _vm._v(
-                                        "\r\n                    Guardar\r\n                  "
+                                        "\n                    Guardar\n                  "
                                       )
                                     ]
                                   )
@@ -39885,7 +39902,7 @@ var staticRenderFns = [
                                         },
                                         [
                                           _vm._v(
-                                            "\r\n                      Nueva Tarea\r\n                    "
+                                            "\n                      Nueva Tarea\n                    "
                                           )
                                         ]
                                       )
@@ -40208,7 +40225,7 @@ var staticRenderFns = [
                                     },
                                     [
                                       _vm._v(
-                                        "\r\n                    Guardar\r\n                  "
+                                        "\n                    Guardar\n                  "
                                       )
                                     ]
                                   )
@@ -40248,7 +40265,7 @@ var staticRenderFns = [
                                         },
                                         [
                                           _vm._v(
-                                            "\r\n                      Nuevo Problema\r\n                    "
+                                            "\n                      Nuevo Problema\n                    "
                                           )
                                         ]
                                       )
@@ -40414,7 +40431,7 @@ var staticRenderFns = [
                                     },
                                     [
                                       _vm._v(
-                                        "\r\n                    Guardar\r\n                  "
+                                        "\n                    Guardar\n                  "
                                       )
                                     ]
                                   )
@@ -40504,7 +40521,7 @@ var staticRenderFns = [
                           },
                           [
                             _vm._v(
-                              "\r\n                      Agregar Usuario\r\n                    "
+                              "\n                      Agregar Usuario\n                    "
                             )
                           ]
                         )
@@ -40578,35 +40595,16 @@ var staticRenderFns = [
                           _vm._v(" "),
                           _c("td", [_vm._v("$ 0")]),
                           _vm._v(" "),
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              attrs: { type: "button" }
-                            },
-                            [_c("i", { staticClass: "fas fa-eye" })]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("tr", [
-                          _c("td", [_vm._v("2")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("Junior Santos")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("junioryl@hotmail.es")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("34262242")]),
-                          _vm._v(" "),
-                          _c("td", [_vm._v("$ 0")]),
-                          _vm._v(" "),
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn btn-primary",
-                              attrs: { type: "button" }
-                            },
-                            [_c("i", { staticClass: "fas fa-eye" })]
-                          )
+                          _c("td", [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "btn btn-primary",
+                                attrs: { type: "button" }
+                              },
+                              [_c("i", { staticClass: "fas fa-eye" })]
+                            )
+                          ])
                         ])
                       ])
                     ])
@@ -40793,7 +40791,7 @@ var staticRenderFns = [
                     },
                     [
                       _vm._v(
-                        "\r\n                    Guardar\r\n                  "
+                        "\n                    Guardar\n                  "
                       )
                     ]
                   )
@@ -53462,7 +53460,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\laragon\www\finalTAW\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Admin\Desktop\proyecto_taw\resources\js\app.js */"./resources/js/app.js");
 
 
 /***/ })

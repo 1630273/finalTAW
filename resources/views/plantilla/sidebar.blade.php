@@ -41,7 +41,7 @@
               <li @Click="menu=4" class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Otro</p>
+                  <p>meuns ver</p>
                 </a>
               </li>
             </ul>
