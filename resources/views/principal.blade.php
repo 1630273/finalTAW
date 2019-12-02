@@ -7,7 +7,7 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>LALO 3 | Starter</title>
   <link rel="stylesheet" href="css/plantilla.css">
-
+ 
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini">
@@ -25,12 +25,45 @@
         <a href="#" class="nav-link">Home</a>
       </li>
     </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('logout')}}" 
+          onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+          <i class="fas fa-th-large">Log Out</i></a>
+        
+      <form id="logout-form" action="{{ route('logout')}}" method="POST" style="display: none;">
+        {{ csrf_field()}}
+      </form>
+
+      </li>
+    </ul>
 
 
   </nav>
   <!-- /.navbar -->
 
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">
+          @if(Auth::check())
+          @if (Auth::user()->idrol == 1)
+              Administrador
+          @elseif (Auth::user()->idrol == 2)
+              Project Manager
+          @elseif (Auth::user()->idrol == 3)
+              Colaborador
+          @elseif (Auth::user()->idrol == 4)
+              Cliente
+          @else
+
+          @endif
+
+      @endif
+      </span>
+    </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
@@ -40,7 +73,7 @@
           <img src="img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">{{Auth::user()->email}}</a>
         </div>
       </div>
       @include('plantilla.sidebar')

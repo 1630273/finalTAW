@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class UsuarioProyecto extends Model
+class Solicitud_Retiro extends Model
 {
     protected $fillable = [
-        'id', 'id_proyecto', 'id_usuario'
-    ];
+        'id', 'cantidad', 'fecha', 'status'
+     ];
 }

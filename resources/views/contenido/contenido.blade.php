@@ -7,7 +7,7 @@
 </template>
 
 <template v-if="menu==1">
-<anidado></anidado>
+<metodos-retiro></metodos-retiro>
 </template>
 
 <template v-if="menu==2">
@@ -27,7 +27,11 @@
 </template>
 
 <template v-if="menu==4">
-    <menuproyecto></menuproyecto>
+<!-- Content Header (Page header) -->
+<div class="content-wrapper">
+<h1>Contenido</h1>
+</div>
+<!-- /.content-wrapper -->
 </template>
 
 <template v-if="menu==5">
@@ -35,7 +39,7 @@
 </template>
 
 <template v-if="menu==6">
-    <menuproyecto></menuproyecto>
+<mis-proyectos></mis-proyectos>
 </template>
 
 <template v-if="menu==7">
@@ -44,26 +48,6 @@
 
 <template v-if="menu==8">
 <usuarios></usuarios>
-</template>
-
-<template v-if="menu==9">
-<servicios></servicios>
-</template>
-
-<template v-if="menu==10">
-<actividades></actividades>
-</template>
-
-<template v-if="menu==11">
-<tareas></tareas>
-</template>
-
-<template v-if="menu==12">
-<problemas></problemas>
-</template>
-
-<template v-if="menu==13">
-<usuarios-proyectos></usuarios-proyectos>
 </template>
 
 @endsection

@@ -23,7 +23,7 @@ class CreateTareasTable extends Migration
             $table->double('precio');
             $table->integer('status');                       
             $table->boolean('condicion')->default(1);
-            $table->foreign('id_actividad')->references('id')->on('actividades')->onDelete('cascade');
+           // $table->foreign('id_actividad')->references('id')->on('actividades')->onDelete('cascade');
             $table->timestamps();
         });
 

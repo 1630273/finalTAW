@@ -14,15 +14,13 @@ class CreateRetirosTable extends Migration
     public function up()
     {
         Schema::create('retiros', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->unsignedBigInteger('id_usuario');
             $table->unsignedBigInteger('id_metodoPago');
-            $table->unsignedBigInteger('id_proyecto');
             $table->double('monto');
             $table->boolean('condicion');
             $table->foreign('id_usuario')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('id_metodoPago')->references('id')->on('metodos_pago')->onDelete('cascade');
-            $table->foreign('id_proyecto')->references('id')->on('proyectos')->onDelete('cascade');
+           // $table->foreign('id_metodoPago')->references('id')->on('metodos_pago')->onDelete('cascade');
             $table->timestamps();
         });
     }

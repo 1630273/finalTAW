@@ -3,97 +3,54 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Proyecto;
+use App\UsuarioProyecto;
+use Illuminate\Support\Facades\DB;
 
 class ProyectoController extends Controller
 {
+    public function index(){
+        $proyectos = Proyecto::all();
+        return $proyectos;
+   }
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index(Request $request)
-    {
+    public function agregar(Request $request){
+        $proyecto = new Proyecto();
+        $proyecto->id_usuario = 1;
+        $proyecto->titulo = $request->titulo;
+        $proyecto->cliente = $request->cliente;
+        $proyecto->f_inicio = $request->f_inicio;
+        $proyecto->f_final = $request->f_final;
+        $proyecto->condicion = '1';
+        $proyecto->save();
+
+
+
         if (!$request->ajax()) return redirect('/');
-        $buscar = $request->buscar;
-        $criterio = $request->criterio;
-
-        if ($buscar == '') {
-            $categorias = Categoria::orderBy('id', 'desc')->paginate(10);
-        } else {
-            $categorias = Categoria::where($criterio, 'like', '%' . $buscar . '%')->orderBy('id', 'desc')->paginate(10);
+         
+        try{
+            DB::beginTransaction();
+            $proyecto = new Proyecto();
+            $proyecto->titulo = $request->titulo;
+            $proyecto->cliente = $request->cliente;
+            $proyecto->f_inicio = $request->f_inicio;
+            $proyecto->f_final = $request->f_final;
+            $proyecto->presupuesto = $request->presupuesto;
+            $proyecto->progreso = $request->progreso;
+            $proyecto->descripcion = $request->descripcion;
+            $proyecto->save();
+ 
+            $usuarioProyecto = new UsuarioProyecto();
+            $usuarioProyecto->id_proyecto = $proyecto->id;
+            $usuarioProyecto->id_usuario = $request->id_usuario;          
+            $usuarioProyecto->save();
+ 
+            DB::commit();
+ 
+        } catch (Exception $e){
+            DB::rollBack();
         }
+   }
 
 
-        return [
-            'pagination' => [
-                'total' => $categorias->total(),
-                'current_page' => $categorias->currentPage(),
-                'per_page' => $categorias->perPage(),
-                'last_page' => $categorias->lastPage(),
-                'from' => $categorias->firstItem(),
-                'to' => $categorias->lastItem(),
-            ],
-            'categorias' => $categorias
-        ];
-    }
-
-    public function selectCategoria(Request $request)
-    {
-        if (!$request->ajax()) return redirect('/');
-        $categorias = Categoria::where('condicion', '=', '1')
-            ->select('id', 'nombre')->orderBy('nombre', 'asc')->get();
-        return ['categorias' => $categorias];
-    }
-
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        if (!$request->ajax()) return redirect('/');
-        $categoria = new Categoria();
-        $categoria->nombre = $request->nombre;
-        $categoria->descripcion = $request->descripcion;
-        $categoria->condicion = '1';
-        $categoria->save();
-    }
-
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @param int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request)
-    {
-        if (!$request->ajax()) return redirect('/');
-        $categoria = Categoria::findOrFail($request->id);
-        $categoria->nombre = $request->nombre;
-        $categoria->descripcion = $request->descripcion;
-        $categoria->condicion = '1';
-        $categoria->save();
-    }
-
-    public function desactivar(Request $request)
-    {
-        if (!$request->ajax()) return redirect('/');
-        $categoria = Categoria::findOrFail($request->id);
-        $categoria->condicion = '0';
-        $categoria->save();
-    }
-
-    public function activar(Request $request)
-    {
-        if (!$request->ajax()) return redirect('/');
-        $categoria = Categoria::findOrFail($request->id);
-        $categoria->condicion = '1';
-        $categoria->save();
-    }
 }

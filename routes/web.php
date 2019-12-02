@@ -11,12 +11,33 @@
 |
 */
 
-Route::get('/main', function () {
-    return view('contenido/contenido');
-})->name('main');
+Route::group(['middleware'=>['guest']],function(){
+    Route::get('/', 'Auth\LoginController@showLoginForm');
+    Route::post('/login', 'Auth\LoginController@login')->name('login');
+});
+
+Route::group(['middleware'=>['auth']],function(){
+
+    Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
+
+    Route::get('/main', function () {
+        return view('contenido/contenido');
+    })->name('main');
+
+    Route::group(['middleware'=>['ProjectManager']],function(){
+        Route::get('/proyectos', 'ProyectoController@index');
+        Route::post('/proyectos/agregar', 'ProyectoController@agregar');
+        Route::get('/user', 'UserController@index');
+        Route::post('/user/registrar', 'UserController@store');
+        Route::put('/user/actualizar', 'UserController@update');
+        Route::put('/user/desactivar', 'UserController@desactivar');
+        Route::put('/user/activar', 'UserController@activar');
+    });
+    
+});
 
 
-Route::get('/', 'Auth\LoginController@showLoginForm');
-Route::post('/login', 'Auth\LoginController@login')->name('login');
+
 
 Route::get('/home', 'HomeController@index')->name('home');
+

@@ -19,6 +19,8 @@ class CreateProyectosTable extends Migration
             $table->string('titulo');
             $table->string('cliente');
             $table->double('presupuesto');
+            $table->integer('progreso');
+            $table->string('descripcion');
             $table->date('f_inicio');
             $table->date('f_final');
             $table->boolean('condicion')->default(1);

@@ -41,7 +41,7 @@
               <li @Click="menu=4" class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>meuns ver</p>
+                  <p>Otro</p>
                 </a>
               </li>
             </ul>
@@ -77,36 +77,6 @@
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lista de usuarios</p>
-                </a>
-              </li>
-              <li @Click="menu=9" class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Servicios</p>
-                </a>
-              </li>
-              <li @Click="menu=10" class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Actividades</p>
-                </a>
-              </li>
-              <li @Click="menu=11" class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Tareas</p>
-                </a>
-              </li>
-              <li @Click="menu=12" class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Problemas</p>
-                </a>
-              </li>
-              <li @Click="menu=13" class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Usuarios-Proyectos</p>
                 </a>
               </li>
             </ul>
