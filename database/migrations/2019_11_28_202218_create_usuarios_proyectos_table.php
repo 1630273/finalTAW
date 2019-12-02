@@ -13,13 +13,16 @@ class CreateUsuariosProyectosTable extends Migration
      */
     public function up()
     {
-        Schema::create('usuarios_proyectos', function (Blueprint $table) {
+        Schema::create('usuario_proyectos', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedBigInteger('id_proyecto');
-            $table->unsignedBigInteger('id_usuario');
+
+            $table->integer('id_proyecto')->unsigned();
             $table->foreign('id_proyecto')->references('id')->on('proyectos')->onDelete('cascade');
-            $table->foreign('id_usuario')->references('id')->on('users')->onDelete('cascade');
-            $table->timestamps();
+
+            $table->integer('id_creador')->unsigned();
+            $table->foreign('id_creador')->references('id')->on('personas')->onDelete('cascade');
+
+            $table->integer('colaborador')->nullable();
         });
     }
 
@@ -30,6 +33,6 @@ class CreateUsuariosProyectosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('usuarios_proyectos');
+        Schema::dropIfExists('usuario_proyectos');
     }
 }

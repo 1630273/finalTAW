@@ -84,10 +84,10 @@
                                     <button type="button" class="btn btn-warning" @click="abrirModal('proyecto', 'actualizar')">
                                       <i class="fas fa-pencil-alt"></i>
                                     </button>
-                                    <button type="button" class="btn btn-primary">
+                                    <button type="button" class="btn btn-primary" @click="verProyecto(proyecto.id);">
                                       <i class="fas fa-eye"></i>
                                     </button>
-                                    <button type="button" class="btn btn-danger">
+                                    <button type="button" class="btn btn-danger" @click="pausarProyecto(proyecto.id)">
                                       <i class="fas fa-trash-alt"></i>
                                     </button>
                                   </td>
@@ -148,13 +148,13 @@
                                     <span class="badge badge-warning">Inactivo</span>
                                   </td>
                                   <td v-if="proyecto.condicion=='2'">
-                                    <button type="button" class="btn btn-warning" @click="abrirModal('proyecto', 'actualizar')">
+                                    <button type="button" class="btn btn-warning" @click="activarProyecto(proyecto.id)">
                                       <i class="fas fa-pencil-alt"></i>
                                     </button>
                                     <button type="button" class="btn btn-primary">
                                       <i class="fas fa-eye"></i>
                                     </button>
-                                    <button type="button" class="btn btn-danger">
+                                    <button type="button" class="btn btn-danger" @click="eliminarProyecto(proyecto.id)">
                                       <i class="fas fa-trash-alt"></i>
                                     </button>
                                   </td>
@@ -279,9 +279,19 @@
                   </div>
                 </div>
 
-                <div class="form-group">
-                  <label for="progreso">Progreso</label>
-                    <input type="text"  class="form-control" v-model="progreso" value="0%"/>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="progreso">Progreso</label>
+                        <input type="number" class="form-control" v-model="progreso" value="0%"/>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="presupuesto">Presupuesto</label>
+                      <input type="number" class="form-control" v-model="presupuesto" placeholder="Presupuesto"/>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="row">
@@ -320,14 +330,14 @@
 export default {
   data() {
     return {
+      id_creador: '',
       titulo: '',
       cliente: '',
-      f_inicio: '',
-      f_final: '',
       presupuesto: '',
       progreso: '',
       descripcion: '',
-      condicion: '',
+      f_inicio: '',
+      f_final: '',
       modal: 0,
       tituloModal: '',
       tipoAccion: 0,
@@ -350,13 +360,14 @@ export default {
       let me = this;
       axios
         .post("/proyectos/agregar", {
+          id_creador: 1,
           titulo: this.titulo,
           cliente: this.cliente,
-          f_inicio: this.f_inicio,
-          f_final: this.f_final,
           presupuesto: this.presupuesto,
           progreso: this.progreso,
-          descripcion: this.descripcion
+          descripcion: this.descripcion,
+          f_inicio: this.f_inicio,
+          f_final: this.f_final
         })
         .then(function(response) {
           me.cerrarModal();
@@ -376,49 +387,150 @@ export default {
       this.presupuesto = '';
       this.progreso = '';
       this.descripcion = '';
+      this.id_creador = '';
     },
     abrirModal(modelo, accion, data = []) {
       switch (modelo) {
         case "proyecto": {
           switch (accion) {
             case "agregar": {
+              this.id_creador = '';
               this.modal = 1;
               this.titulo = '';
               this.cliente = '';
-              this.f_inicio = '';
-              this.f_final = '';
               this.presupuesto = '';
               this.progreso = '';
               this.descripcion = '';
+              this.f_inicio = '';
+              this.f_final = '';
               this.tipoAccion = 1;
               this.tituloModal = "Agregar Nuevo Proyecto";
               break;
             }
             case "actualizar": {
-              this.modal = 1;
-              this.titulo = data['titulo'];
-            
-              this.persona_id=data['id'];
-              this.nombre = data['nombre'];
-              this.cliente = data['cliente'];
-              this.f_inicio = data['f_inicio'];
-              this.f_final = data['f_final'];
-              this.presupuesto = data['presupuesto'];
-              this.progreso = data['progreso'];
-              this.descripcion = data['descripcion'];
-              this.tipoAccion = 2;
-              this.tituloModal = "Actualizar Proyecto";
-              break;
+              
             }
           }
         }
       }
+    },pausarProyecto(id){
+        swal.fire({
+          title: 'Esta seguro de pausar este proyecto?',
+          type: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Aceptar!',
+          cancelButtonText: 'Cancelar',
+          confirmButtonClass: 'btn btn-primary',
+          cancelButtonClass: 'btn btn-primary',
+          buttonsStyling: false,
+          reverseButtons: true
+        }).then((result) => {
+          if (result.value) {
+            let me = this;
+            axios.put('/proyectos/pausar',{
+             'id': id
+            }).then(function (response) {
+              me.listarProyectos(1,'','titulo');
+              swal.fire(
+                'Proyecto pausado!',
+                'El proyecto ha sido pausado con éxito.',
+                'success'
+              )
+            }).catch(function (error) {
+              console.log(error);
+            });
+          } else if (
+            result.dismiss === swal.DismissReason.cancel
+          ){
+                  
+            }
+        }) 
+      },activarProyecto(id){
+        swal.fire({
+          title: 'Esta seguro de activar este proyecto?',
+          type: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Aceptar!',
+          cancelButtonText: 'Cancelar',
+          confirmButtonClass: 'btn btn-primary',
+          cancelButtonClass: 'btn btn-primary',
+          buttonsStyling: false,
+          reverseButtons: true
+        }).then((result) => {
+          if (result.value) {
+            let me = this;
+            axios.put('/proyectos/activar',{
+             'id': id
+            }).then(function (response) {
+              me.listarProyectos(1,'','titulo');
+              swal.fire(
+                'Proyecto Reactivado!',
+                'El proyecto ha sido activado con éxito.',
+                'success'
+              )
+            }).catch(function (error) {
+              console.log(error);
+            });
+          } else if (
+            result.dismiss === swal.DismissReason.cancel
+          ){
+                  
+            }
+        }) 
+      },eliminarProyecto(id){
+        swal.fire({
+          title: 'Esta seguro de eliminar este proyecto?',
+          type: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Aceptar!',
+          cancelButtonText: 'Cancelar',
+          confirmButtonClass: 'btn btn-primary',
+          cancelButtonClass: 'btn btn-primary',
+          buttonsStyling: false,
+          reverseButtons: true
+        }).then((result) => {
+          if (result.value) {
+            let me = this;
+            axios.put('/proyectos/eliminar',{
+             'id': id
+            }).then(function (response) {
+              me.listarProyectos(1,'','titulo');
+              swal.fire(
+                'Eliminado!',
+                'El proyecto ha sido eliminado con éxito.',
+                'success'
+              )
+            }).catch(function (error) {
+              console.log(error);
+            });
+          } else if (
+            result.dismiss === swal.DismissReason.cancel
+          ){
+                  
+            }
+        }) 
+      },verProyecto(id){
+        let me = this;
+        axios
+          .get("/proyectos/vista")
+          .then(function(response) {
+            me.arrayProyecto = response.data;
+          })
+          .catch(function(error) {
+            console.log(error);
+          });
+      },
+    },
+    mounted() {
+      this.listarProyectos();
     }
-  },
-  mounted() {
-    this.listarProyectos();
-  }
-};
+  };
 </script>
 
 <style>    

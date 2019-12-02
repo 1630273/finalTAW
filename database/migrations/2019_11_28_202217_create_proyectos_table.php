@@ -14,17 +14,16 @@ class CreateProyectosTable extends Migration
     public function up()
     {
         Schema::create('proyectos', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->unsignedBigInteger('id_usuario');
+            $table->increments('id');
+            $table->integer('id_creador');
             $table->string('titulo');
             $table->string('cliente');
             $table->double('presupuesto');
             $table->integer('progreso');
             $table->string('descripcion');
+            $table->boolean('condicion')->default(1);
             $table->date('f_inicio');
             $table->date('f_final');
-            $table->boolean('condicion')->default(1);
-            $table->foreign('id_usuario')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
          });
     }

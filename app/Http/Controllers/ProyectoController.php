@@ -15,34 +15,26 @@ class ProyectoController extends Controller
    }
 
     public function agregar(Request $request){
-        $proyecto = new Proyecto();
-        $proyecto->id_usuario = 1;
-        $proyecto->titulo = $request->titulo;
-        $proyecto->cliente = $request->cliente;
-        $proyecto->f_inicio = $request->f_inicio;
-        $proyecto->f_final = $request->f_final;
-        $proyecto->condicion = '1';
-        $proyecto->save();
-
-
-
+        
         if (!$request->ajax()) return redirect('/');
          
         try{
             DB::beginTransaction();
             $proyecto = new Proyecto();
+            $proyecto->id_creador = $request->id_creador;
             $proyecto->titulo = $request->titulo;
             $proyecto->cliente = $request->cliente;
-            $proyecto->f_inicio = $request->f_inicio;
-            $proyecto->f_final = $request->f_final;
             $proyecto->presupuesto = $request->presupuesto;
             $proyecto->progreso = $request->progreso;
             $proyecto->descripcion = $request->descripcion;
+            $proyecto->f_inicio = $request->f_inicio;
+            $proyecto->f_final = $request->f_final;
+            
             $proyecto->save();
  
             $usuarioProyecto = new UsuarioProyecto();
             $usuarioProyecto->id_proyecto = $proyecto->id;
-            $usuarioProyecto->id_usuario = $request->id_usuario;          
+            $usuarioProyecto->id_creador = $request->id_creador;          
             $usuarioProyecto->save();
  
             DB::commit();
@@ -51,6 +43,34 @@ class ProyectoController extends Controller
             DB::rollBack();
         }
    }
+
+   public function pausar(Request $request)
+    {
+        if (!$request->ajax()) return redirect('/');
+        $proyecto = Proyecto::findOrFail($request->id);
+        $proyecto->condicion = '2';
+        $proyecto->save();
+    }
+
+    public function activar(Request $request)
+    {
+        if (!$request->ajax()) return redirect('/');
+        $proyecto = Proyecto::findOrFail($request->id);
+        $proyecto->condicion = '1';
+        $proyecto->save();
+    }
+
+    public function eliminar(Request $request)
+    {
+        if (!$request->ajax()) return redirect('/');
+        $proyecto = Proyecto::findOrFail($request->id);
+        $proyecto->condicion = '0';
+        $proyecto->save();
+    }
+
+    public function vista(){
+        return redirect('/main');
+    }
 
 
 }

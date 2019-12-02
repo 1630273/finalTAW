@@ -34,6 +34,7 @@ mix.styles([
    'resources/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js',
    'resources/plugins/summernote/summernote-bs4.min.js',
    'resources/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js',
-   'resources/dist/js/adminlte.min.js'
+   'resources/dist/js/adminlte.min.js',
+   'resources/plugins/sweetalert2/sweetalert2.all.js'
 ], 'public/js/plantilla.js')
 .js(['resources/js/app.js'],'public/js/app.js');

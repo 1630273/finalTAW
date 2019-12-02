@@ -27,11 +27,7 @@
 </template>
 
 <template v-if="menu==4">
-<!-- Content Header (Page header) -->
-<div class="content-wrapper">
-<h1>Contenido</h1>
-</div>
-<!-- /.content-wrapper -->
+    <menuproyecto></menuproyecto>
 </template>
 
 <template v-if="menu==5">
@@ -39,7 +35,7 @@
 </template>
 
 <template v-if="menu==6">
-<mis-proyectos></mis-proyectos>
+    <mis-proyectos></mis-proyectos>
 </template>
 
 <template v-if="menu==7">
@@ -48,6 +44,26 @@
 
 <template v-if="menu==8">
 <usuarios></usuarios>
+</template>
+
+<template v-if="menu==9">
+<servicios></servicios>
+</template>
+
+<template v-if="act">
+<act></act>
+</template>
+
+<template v-if="task">
+<tareas></tareas>
+</template>
+
+<template v-if="issue">
+<problemas></problemas>
+</template>
+
+<template v-if="users-proj">
+<usuarios-proyectos></usuarios-proyectos>
 </template>
 
 @endsection

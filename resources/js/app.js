@@ -17,10 +17,16 @@ window.Vue = require('vue');
 
 Vue.component('dashboard', require('./components/dashboard.vue').default);
 Vue.component('metodos-retiro', require('./components/metodos-retiro.vue').default);
-Vue.component('crear-proyecto', require('./components/crear-proyecto.vue').default);
-Vue.component('mis-proyectos', require('./components/mis-proyectos.vue').default);
-Vue.component('proyectos', require('./components/proyectos.vue').default);
+Vue.component('crear-proyecto', require('./components/proyectos/crear-proyecto.vue').default);
+Vue.component('mis-proyectos', require('./components/proyectos/mis-proyectos.vue').default);
+Vue.component('proyectos', require('./components/proyectos/proyectos.vue').default);
 Vue.component('usuarios', require('./components/usuarios.vue').default);
+Vue.component('servicios', require('./components/servicios.vue').default);
+Vue.component('tareas', require('./components/proyectos/tareas.vue').default);
+Vue.component('problemas', require('./components/proyectos/problemas.vue').default);
+Vue.component('anidado', require('./components/proyectos/anidado.vue').default);
+Vue.component('usuarios-proyectos', require('./components/proyectos/usuarios-proyectos.vue').default);
+Vue.component('act', require('./components/proyectos/act.vue').default);
 
 const app = new Vue({
     el: '#app',

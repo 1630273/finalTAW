@@ -392,7 +392,7 @@
                 }
             },
               desactivarUsuario(id){
-               swal({
+               swal.fire({
                 title: 'Esta seguro de desactivar este usuario?',
                 type: 'warning',
                 showCancelButton: true,
@@ -412,9 +412,9 @@
                         'id': id
                     }).then(function (response) {
                         me.listarPersona(1,'','nombre');
-                        swal(
+                        swal.fire(
                         'Desactivado!',
-                        'El registro ha sido desactivado con éxito.',
+                        'El usuario ha sido desactivado con éxito.',
                         'success'
                         )
                     }).catch(function (error) {
@@ -430,45 +430,6 @@
                 }
               }) 
             },
-            activarUsuario(id){
-               swal({
-                title: 'Esta seguro de activar este usuario?',
-                type: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Aceptar!',
-                cancelButtonText: 'Cancelar',
-                confirmButtonClass: 'btn btn-success',
-                cancelButtonClass: 'btn btn-danger',
-                buttonsStyling: false,
-                reverseButtons: true
-                }).then((result) => {
-                if (result.value) {
-                    let me = this;
-
-                    axios.put('/user/activar',{
-                        'id': id
-                    }).then(function (response) {
-                        me.listarPersona(1,'','nombre');
-                        swal(
-                        'Activado!',
-                        'El registro ha sido activado con éxito.',
-                        'success'
-                        )
-                    }).catch(function (error) {
-                        console.log(error);
-                    });
-                    
-                    
-                } else if (
-                    // Read more about handling dismissals
-                    result.dismiss === swal.DismissReason.cancel
-                ) {
-                    
-                }
-                }) 
-            }
         },
         mounted() {
             this.listarPersona(1,this.buscar,this.criterio);

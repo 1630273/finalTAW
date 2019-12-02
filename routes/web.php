@@ -27,6 +27,10 @@ Route::group(['middleware'=>['auth']],function(){
     Route::group(['middleware'=>['ProjectManager']],function(){
         Route::get('/proyectos', 'ProyectoController@index');
         Route::post('/proyectos/agregar', 'ProyectoController@agregar');
+        Route::put('/proyectos/pausar', 'ProyectoController@pausar');
+        Route::put('/proyectos/activar', 'ProyectoController@activar');
+        Route::put('/proyectos/eliminar', 'ProyectoController@eliminar');
+        Route::get('/proyectos/vista', 'ProyectoController@vista');
         Route::get('/user', 'UserController@index');
         Route::post('/user/registrar', 'UserController@store');
         Route::put('/user/actualizar', 'UserController@update');
@@ -39,5 +43,5 @@ Route::group(['middleware'=>['auth']],function(){
 
 
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 
