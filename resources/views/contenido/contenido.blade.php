@@ -43,7 +43,7 @@
 </template>
 
 <template v-if="menu==7">
-<proyectos></proyectos>
+<anidado></anidado>
 </template>
 
 <template v-if="menu==8">
