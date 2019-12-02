@@ -38,12 +38,6 @@
                   <p>Registro de Retiro</p>
                 </a>
               </li>
-              <li @Click="menu=4" class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>meuns ver</p>
-                </a>
-              </li>
             </ul>
           </li>
           <li class="nav-item has-treeview menu-open">
@@ -83,30 +77,6 @@
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Servicios</p>
-                </a>
-              </li>
-              <li @Click="menu=10" class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Actividades</p>
-                </a>
-              </li>
-              <li @Click="menu=11" class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Tareas</p>
-                </a>
-              </li>
-              <li @Click="menu=12" class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Problemas</p>
-                </a>
-              </li>
-              <li @Click="menu=13" class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Usuarios-Proyectos</p>
                 </a>
               </li>
             </ul>

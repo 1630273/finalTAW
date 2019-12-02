@@ -1,7 +1,4 @@
 <template>
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-
         <!-- Main content -->
         <div class="content">
             <div class="container-fluid">
@@ -10,6 +7,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
+                                <h3 class="card-title">Tareas</h3>
                                 <div class="card-tools">
                                     <div
                                         class="input-group input-group-sm"
@@ -79,10 +77,7 @@
                 </div>
                 <!-- /.row -->
             </div>
-        </div>
-        <!-- /.content -->
-
-        <div class="modal fade" id="agregarTarea">
+                    <div class="modal fade" id="agregarTarea">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -220,7 +215,8 @@
             </div>
             <!-- Fin modal -->
         </div>
-    </div>
+        </div>
+        <!-- /.content -->
 
 </template>
 

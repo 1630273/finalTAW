@@ -22,11 +22,11 @@ Vue.component('mis-proyectos', require('./components/proyectos/mis-proyectos.vue
 Vue.component('proyectos', require('./components/proyectos/proyectos.vue').default);
 Vue.component('usuarios', require('./components/usuarios.vue').default);
 Vue.component('servicios', require('./components/servicios.vue').default);
-Vue.component('actividades', require('./components/proyectos/actividades.vue').default);
 Vue.component('tareas', require('./components/proyectos/tareas.vue').default);
 Vue.component('problemas', require('./components/proyectos/problemas.vue').default);
-Vue.component('anidado', require('./components/anidado.vue').default);
+Vue.component('anidado', require('./components/proyectos/anidado.vue').default);
 Vue.component('usuarios-proyectos', require('./components/proyectos/usuarios-proyectos.vue').default);
+Vue.component('act', require('./components/proyectos/act.vue').default);
 
 
 const app = new Vue({

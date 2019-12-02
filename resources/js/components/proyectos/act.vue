@@ -1,11 +1,12 @@
 <template>
-        <div class="content">
+<div class="content">
             <div class="container-fluid">
                 <!-- /.row -->
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
+                            	<h3 class="card-title">Actividades</h3>
                                 <div class="card-tools">
                                     <div
                                         class="input-group input-group-sm"
@@ -15,9 +16,9 @@
                                             type="button"
                                             class="btn btn-default"
                                             data-toggle="modal"
-                                            data-target="#agregarProblema"
+                                            data-target="#agregarAct"
                                         >
-                                            Nuevo Problema
+                                            Nueva Actividad
                                         </button>
                                     </div>
                                 </div>
@@ -30,24 +31,17 @@
                                 <table class="table table-head-fixed">
                                     <thead>
                                         <tr>
-                                            <th>Descripción</th>
-                                            <th>Creado por</th>
-                                            <th>Asignado al usuario</th>
-                                            <th>Estatus</th>
+                                            <th>Titulo</th>
+                                            <th>Fecha Inicio</th>
+                                            <th>Fecha Final</th>
                                             <th>Accion</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Redundancia en la BD</td>
-                                            <td>Admin</td>
-                                            <td>Polendo</td>
-                                            <td>
-                                                <span
-                                                    class="badge badge-success"
-                                                    >Abierto</span
-                                                >
-                                            </td>
+                                            <td>Crear base de datos</td>
+                                            <td>27/11/2019</td>
+                                            <td>31/12/2019</td>
                                             <td>
                                                 <button
                                                     type="button"
@@ -62,14 +56,9 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Faltan tacos</td>
-                                            <td>Admin</td>
-                                            <td>Rafael</td>
-                                            <td>
-                                                <span class="badge badge-danger"
-                                                    >Cerrado</span
-                                                >
-                                            </td>
+                                            <td>Crear modulo de pagos</td>
+                                            <td>30/11/2019</td>
+                                            <td>31/12/2019</td>
                                             <td>
                                                 <button
                                                     type="button"
@@ -92,11 +81,11 @@
                 </div>
                 <!-- /.row -->
             </div>
-            <div class="modal fade" id="agregarProblema">
+            <div class="modal fade" id="agregarAct">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Agregar nuevo problema</h4>
+                        <h4 class="modal-title">Agregar nueva actividad</h4>
                         <button
                             type="button"
                             class="close"
@@ -110,12 +99,43 @@
                         <form method="post">
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label>Seleccionar usuario</label>
-                                    <select class="form-control">
-                                        <option>Brian</option>
-                                        <option>Rafael</option>
-                                        <option>Polendo</option>
-                                    </select>
+                                    <label for="titulo">Titulo</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="titulo"
+                                        placeholder="Titulo de la actividad"
+                                    />
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="fechaIni"
+                                                >Fecha Inicio</label
+                                            >
+                                            <input
+                                                type="date"
+                                                class="form-control"
+                                                id="fechaIni"
+                                                placeholder="Fecha inicio"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="fechaFin"
+                                                >Fecha Final</label
+                                            >
+                                            <input
+                                                type="date"
+                                                class="form-control"
+                                                id="fechaFin"
+                                                placeholder="Fecha inicio"
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="form-group">
@@ -145,13 +165,4 @@
             <!-- Fin modal -->
         </div>
         </div>
-        <!-- /.content -->
 </template>
-
-<script>
-export default {
-    mounted() {
-        console.log("Component mounted.");
-    }
-};
-</script>

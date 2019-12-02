@@ -7,7 +7,7 @@
 </template>
 
 <template v-if="menu==1">
-<anidado></anidado>
+<metodos-retiro></metodos-retiro>
 </template>
 
 <template v-if="menu==2">
@@ -35,11 +35,11 @@
 </template>
 
 <template v-if="menu==6">
-    <menuproyecto></menuproyecto>
+    <mis-proyectos></mis-proyectos>
 </template>
 
 <template v-if="menu==7">
-<proyectos></proyectos>
+<anidado></anidado>
 </template>
 
 <template v-if="menu==8">
@@ -50,19 +50,19 @@
 <servicios></servicios>
 </template>
 
-<template v-if="menu==10">
-<actividades></actividades>
+<template v-if="act">
+<act></act>
 </template>
 
-<template v-if="menu==11">
+<template v-if="task">
 <tareas></tareas>
 </template>
 
-<template v-if="menu==12">
+<template v-if="issue">
 <problemas></problemas>
 </template>
 
-<template v-if="menu==13">
+<template v-if="users-proj">
 <usuarios-proyectos></usuarios-proyectos>
 </template>
 
